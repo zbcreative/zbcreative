@@ -496,4 +496,17 @@
   // Scroll fade-in
   const obs = new IntersectionObserver(
     entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),
-    {threshold:0.08,r
+    {threshold:0.08,rootMargin:'0px 0px -30px 0px'}
+  );
+  document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+  // Back to top
+  const btt = document.getElementById('btt');
+  window.addEventListener('scroll',()=>btt.classList.toggle('vis',window.scrollY>400),{passive:true});
+
+  // Mobile menu
+  document.getElementById('mtog').addEventListener('click',()=>document.getElementById('mob-menu').classList.add('open'));
+  document.getElementById('mob-close').addEventListener('click',()=>document.getElementById('mob-menu').classList.remove('open'));
+</script>
+</body>
+</html>
