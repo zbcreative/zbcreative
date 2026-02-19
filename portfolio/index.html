@@ -69,7 +69,7 @@
   /* HERO */
   .phero{padding:140px 0 80px;background:var(--cream);position:relative;overflow:hidden}
   .phero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(26,26,26,.045) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
-  .phero-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .phero-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:80px;align-items:center}
   .phero h1{font-family:var(--fd);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:900;line-height:1.08;letter-spacing:-.02em;margin-bottom:20px}
   .phero h1 em{font-style:italic;color:var(--or)}
   .phero p{font-size:1.08rem;color:var(--gm);line-height:1.72;margin-bottom:32px;max-width:480px}
@@ -77,17 +77,17 @@
   .pstats{display:flex;gap:32px;margin-top:8px}
   .pstat-n{font-family:var(--fd);font-size:2rem;font-weight:900;color:var(--or)}
   .pstat-l{font-size:.78rem;font-weight:600;color:var(--gm);text-transform:uppercase;letter-spacing:.06em;line-height:1.3}
-  .phero-right{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .phero-right{display:block}
   .pmini{background:var(--wh);border-radius:var(--rmd);overflow:hidden;box-shadow:var(--smd);aspect-ratio:4/3;position:relative}
   .pmini:first-child{grid-column:span 2;aspect-ratio:16/7}
   .pmini-bg{width:100%;height:100%;background:linear-gradient(135deg,var(--bl-dk),var(--bl));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:.05em;text-transform:uppercase}
   .pmini-bg.or{background:linear-gradient(135deg,#a33218,var(--or))}
 
   /* ── PORTFOLIO HERO VISUAL ───────────────────────────────── */
-  .pvis-wrap{position:relative;padding:24px 24px 24px 0}
+  .pvis-wrap{position:relative;padding:32px 32px 40px 20px;margin-left:10px}
 
   /* Browser mockup */
-  .pbrowser{background:var(--wh);border-radius:12px;box-shadow:var(--slg);overflow:hidden;border:1.5px solid rgba(26,26,26,.08)}
+  .pbrowser{background:var(--wh);border-radius:14px;box-shadow:var(--slg);overflow:hidden;border:1.5px solid rgba(26,26,26,.08)}
   .pbrowser-bar{display:flex;align-items:center;gap:10px;padding:9px 14px;background:var(--cream-dk);border-bottom:1.5px solid rgba(26,26,26,.07)}
   .pbrowser-dots{display:flex;gap:5px}
   .pbrowser-dots span{width:8px;height:8px;border-radius:50%;display:block}
@@ -95,7 +95,7 @@
   .pbrowser-screen{background:var(--cream);overflow:hidden}
 
   /* Mini site inside browser */
-  .psite{position:relative;overflow:hidden;min-height:200px}
+  .psite{position:relative;overflow:hidden;min-height:240px}
   .psite-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(26,26,26,.07) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
   .psite-nav{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;background:rgba(245,240,228,.95);border-bottom:1px solid rgba(26,26,26,.06);position:relative;z-index:1}
   .psite-logo{font-family:var(--fd);font-weight:900;font-size:.75rem;color:var(--or);letter-spacing:-.01em}
@@ -114,9 +114,9 @@
 
   /* Floating badges */
   .pfloat{position:absolute;background:var(--wh);border-radius:12px;padding:8px 11px;display:flex;align-items:center;gap:9px;box-shadow:var(--smd);border:1.5px solid rgba(26,26,26,.06);z-index:10;animation:floatbob 4s ease-in-out infinite}
-  .pfloat-tr{top:-14px;right:-14px;animation-delay:0s}
-  .pfloat-bl{bottom:24px;left:-14px;animation-delay:1.4s}
-  .pfloat-br{bottom:-14px;right:10px;animation-delay:2.6s}
+  .pfloat-tr{top:-16px;right:-16px;animation-delay:0s}
+  .pfloat-bl{bottom:30px;left:-16px;animation-delay:1.4s}
+  .pfloat-br{bottom:-16px;right:14px;animation-delay:2.6s}
   @keyframes floatbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
   .pfloat-title{font-family:var(--fd);font-size:.72rem;font-weight:700;color:var(--ch);white-space:nowrap}
   .pfloat-sub{font-size:.6rem;color:var(--gl);white-space:nowrap;margin-top:1px}
@@ -365,8 +365,8 @@
                       <circle cx="60" cy="91" r="1.2" fill="#ffa726"/>
                       <circle cx="66" cy="89" r="1" fill="#ef9a9a"/>
                       <!-- Trusted badge -->
-                      <rect x="52" y="4" width="44" height="9" rx="4" fill="#fff" opacity=".92"/>
-                      <text x="57" y="10.5" font-size="4.5" font-family="system-ui" font-weight="700" fill="#222">⭐ Trusted Since 2023</text>
+                      <rect x="34" y="3" width="64" height="10" rx="4" fill="#fff" opacity=".95"/>
+                      <text x="40" y="10" font-size="4.2" font-family="system-ui" font-weight="700" fill="#333">&#11088; Trusted Since 2023</text>
                     </svg>
                   </div>
                 </div>
