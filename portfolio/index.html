@@ -1,1 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — ZB Creative | Web Design for Small Businesses</title>
+  <meta name="description" content="See the websites ZB Creative has built for small businesses across the US. AI-optimized, SEO-ready, and designed to convert visitors into customers." />
+  <link rel="canonical" href="https://zbcreative.agency/portfolio" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
 
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;600&display=swap&subset=latin" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;600&display=swap&subset=latin" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;600&display=swap&subset=latin" /></noscript>
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"ZB Creative Portfolio","description":"Web design portfolio showcasing AI-optimized websites built by ZB Creative for small businesses.","url":"https://zbcreative.agency/portfolio","publisher":{"@type":"ProfessionalService","name":"ZB Creative","url":"https://zbcreative.agency"}}
+  </script>
+
+<style>
+  :root {
+    --cream:#F5F0E4; --cream-dk:#EDE6D3;
+    --or:#D94F2B; --or-lt:#E8653D;
+    --bl:#2B6FA8; --bl-dk:#1E4F7A;
+    --ye:#F5B800;
+    --ch:#1A1A1A; --gm:#5A5A5A; --gl:#A8A8A8; --wh:#FFFFFF;
+    --fd:'Fraunces',Georgia,serif; --fb:'DM Sans',system-ui,sans-serif;
+    --mw:1160px;
+    --rlg:20px; --rmd:12px; --rp:50px;
+    --ssm:0 2px 8px rgba(0,0,0,.06);
+    --smd:0 4px 20px rgba(0,0,0,.10);
+    --slg:0 12px 40px rgba(0,0,0,.14);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--fb);background:var(--cream);color:var(--ch);line-height:1.6;overflow-x:hidden}
+  img{max-width:100%;display:block} a{color:inherit;text-decoration:none} button{cursor:pointer;border:none;font-family:inherit;background:none} ul{list-style:none}
+  address{font-style:normal}
+  .w{max-width:var(--mw);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+  /* NAV */
+  header{position:fixed;top:0;left:0;right:0;z-index:100}
+  .ni{display:flex;align-items:center;justify-content:space-between;padding:10px clamp(20px,5vw,48px);background:rgba(245,240,228,.93);backdrop-filter:blur(14px);border-bottom:1.5px solid rgba(26,26,26,.07)}
+  .nl{height:72px;width:auto}
+  nav ul{display:flex;align-items:center;gap:clamp(16px,2.4vw,30px)}
+  nav a{font-family:var(--fd);font-size:.9rem;font-weight:700;letter-spacing:-.01em;transition:color .2s;position:relative}
+  nav a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:2px;background:var(--or);transform:scaleX(0);transition:transform .2s}
+  nav a:hover{color:var(--or)} nav a:hover::after,nav a.active::after{transform:scaleX(1)}
+  nav a.active{color:var(--or)}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:var(--rp);font-weight:600;font-size:.93rem;transition:all .2s ease;white-space:nowrap}
+  .bor{background:var(--or);color:var(--wh);box-shadow:0 4px 0 #a33218}
+  .bor:hover{background:var(--or-lt);transform:translateY(-2px);box-shadow:0 6px 0 #a33218}
+  .ncta{display:none}
+  @media(min-width:900px){.ncta{display:inline-flex}}
+  .mtog{display:none;flex-direction:column;gap:5px;padding:8px}
+  .mtog span{width:24px;height:2px;background:var(--ch);border-radius:2px;transition:all .3s}
+  @media(max-width:899px){nav ul,.ncta{display:none}.mtog{display:flex}}
+
+  /* TAG */
+  .tag{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:5px 13px;border-radius:var(--rp);background:var(--ye);color:var(--ch)}
+  .tag.or{background:var(--or);color:var(--wh)}
+  .tag.bl{background:var(--bl);color:var(--wh)}
+
+  /* HERO */
+  .phero{padding:140px 0 80px;background:var(--cream);position:relative;overflow:hidden}
+  .phero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(26,26,26,.045) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+  .phero-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .phero h1{font-family:var(--fd);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:900;line-height:1.08;letter-spacing:-.02em;margin-bottom:20px}
+  .phero h1 em{font-style:italic;color:var(--or)}
+  .phero p{font-size:1.08rem;color:var(--gm);line-height:1.72;margin-bottom:32px;max-width:480px}
+  .phero-tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+  .pstats{display:flex;gap:32px;margin-top:8px}
+  .pstat-n{font-family:var(--fd);font-size:2rem;font-weight:900;color:var(--or)}
+  .pstat-l{font-size:.78rem;font-weight:600;color:var(--gm);text-transform:uppercase;letter-spacing:.06em;line-height:1.3}
+  .phero-right{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .pmini{background:var(--wh);border-radius:var(--rmd);overflow:hidden;box-shadow:var(--smd);aspect-ratio:4/3;position:relative}
+  .pmini:first-child{grid-column:span 2;aspect-ratio:16/7}
+  .pmini-bg{width:100%;height:100%;background:linear-gradient(135deg,var(--bl-dk),var(--bl));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:.05em;text-transform:uppercase}
+  .pmini-bg.or{background:linear-gradient(135deg,#a33218,var(--or))}
+  .pmini-bg.ye{background:linear-gradient(135deg,#c49200,var(--ye));color:rgba(26,26,26,.5)}
+  .pmini-label{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,.55);color:#fff;font-size:.68rem;font-weight:600;padding:4px 10px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;backdrop-filter:blur(6px)}
+  @media(max-width:760px){.phero-inner{grid-template-columns:1fr}.phero-right{display:none}}
+
+  /* FILTER */
+  .pfilt{padding:48px 0 32px;border-bottom:1.5px solid rgba(26,26,26,.08)}
+  .pfilt-inner{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .pfilt-label{font-family:var(--fd);font-weight:700;font-size:.9rem;margin-right:8px}
+  .fchip{padding:8px 18px;border-radius:var(--rp);font-size:.8rem;font-weight:600;border:1.5px solid rgba(26,26,26,.15);color:var(--gm);cursor:pointer;transition:all .2s;background:var(--wh)}
+  .fchip:hover,.fchip.on{background:var(--ch);color:var(--wh);border-color:var(--ch)}
+  .fchip.on{background:var(--or);border-color:var(--or)}
+
+  /* GRID */
+  .pgrid-section{padding:60px 0 100px}
+  .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  @media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.pgrid{grid-template-columns:1fr}}
+
+  /* PROJECT CARD */
+  .pcard{background:var(--wh);border-radius:var(--rlg);overflow:hidden;box-shadow:var(--ssm);border:1.5px solid rgba(26,26,26,.07);transition:transform .25s,box-shadow .25s;cursor:pointer}
+  .pcard:hover{transform:translateY(-6px);box-shadow:var(--slg)}
+  .pcard-img{aspect-ratio:16/10;position:relative;overflow:hidden}
+  .pcard-ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.3rem;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.06em;text-transform:uppercase;transition:transform .4s}
+  .pcard:hover .pcard-ph{transform:scale(1.04)}
+  .pcard-ph.c1{background:linear-gradient(145deg,#1E4F7A,#2B6FA8)}
+  .pcard-ph.c2{background:linear-gradient(145deg,#a33218,#D94F2B)}
+  .pcard-ph.c3{background:linear-gradient(145deg,#c49200,#F5B800)}
+  .pcard-ph.c4{background:linear-gradient(145deg,#2d6a4f,#52b788)}
+  .pcard-ph.c5{background:linear-gradient(145deg,#6b3fa0,#9b5de5)}
+  .pcard-ph.c6{background:linear-gradient(145deg,#1A1A1A,#444)}
+  .pcard-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .25s;display:flex;align-items:flex-end;padding:16px}
+  .pcard:hover .pcard-overlay{background:rgba(0,0,0,.18)}
+  .pcard-live{opacity:0;transform:translateY(8px);transition:all .25s;background:var(--wh);color:var(--ch);font-size:.72rem;font-weight:700;padding:6px 14px;border-radius:var(--rp);display:inline-flex;align-items:center;gap:6px}
+  .pcard:hover .pcard-live{opacity:1;transform:translateY(0)}
+  .pcard-body{padding:22px 24px 24px}
+  .pcard-cat{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--or);margin-bottom:8px}
+  .pcard-name{font-family:var(--fd);font-size:1.18rem;font-weight:700;margin-bottom:6px;line-height:1.2}
+  .pcard-desc{font-size:.88rem;color:var(--gm);line-height:1.6;margin-bottom:16px}
+  .pcard-tags{display:flex;gap:6px;flex-wrap:wrap}
+  .ptag{font-size:.66rem;font-weight:600;padding:3px 10px;border-radius:var(--rp);background:var(--cream-dk);color:var(--gm);letter-spacing:.04em}
+
+  /* FEATURED CARD */
+  .pcard.feat{grid-column:span 2}
+  .pcard.feat .pcard-img{aspect-ratio:21/10}
+  @media(max-width:900px){.pcard.feat{grid-column:span 1}.pcard.feat .pcard-img{aspect-ratio:16/10}}
+
+  /* PLACEHOLDER NOTICE */
+  .pcard-ph-note{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.5);color:rgba(255,255,255,.7);font-size:.62rem;font-weight:600;padding:3px 8px;border-radius:4px;letter-spacing:.04em;backdrop-filter:blur(4px)}
+
+  /* CTA */
+  .pcta{background:var(--ch);padding:80px 0;text-align:center}
+  .pcta h2{font-family:var(--fd);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--wh);margin-bottom:14px;line-height:1.1}
+  .pcta h2 em{font-style:italic;color:var(--or)}
+  .pcta p{color:rgba(255,255,255,.65);font-size:1rem;margin-bottom:32px}
+  .pcta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .bwh{background:var(--wh);color:var(--ch);box-shadow:0 4px 0 rgba(0,0,0,.3)}
+  .bwh:hover{background:var(--cream);transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.3)}
+  .bwho{background:transparent;color:var(--wh);border:2px solid rgba(255,255,255,.3)}
+  .bwho:hover{border-color:var(--wh);background:rgba(255,255,255,.08)}
+
+  /* FOOTER */
+  footer{background:var(--ch);padding:clamp(48px,6vw,80px) 0 30px;color:rgba(255,255,255,.55)}
+  .fgr{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,4vw,60px);margin-bottom:48px}
+  @media(max-width:760px){.fgr{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.fgr{grid-template-columns:1fr}}
+  .flo{height:140px;width:auto;margin-bottom:14px}
+  .fde{font-size:.88rem;line-height:1.7;margin-bottom:18px;max-width:280px}
+  .fna{font-size:.82rem;line-height:1.9;color:rgba(255,255,255,.45)}
+  .fna a{color:rgba(255,255,255,.55);transition:color .2s} .fna a:hover{color:var(--wh)}
+  .fct2{font-family:var(--fd);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:16px}
+  .fli li{margin-bottom:10px} .fli a{font-size:.85rem;color:rgba(255,255,255,.55);transition:color .2s} .fli a:hover{color:var(--wh)}
+  .fbo{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;color:rgba(255,255,255,.3)}
+  .sor{display:flex;gap:14px;margin-top:20px}
+  .soc{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);transition:all .2s}
+  .soc:hover{background:var(--or);color:var(--wh)}
+
+  /* BACK TO TOP */
+  #btt{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:50%;background:var(--or);color:var(--wh);font-size:1.2rem;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.18);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;transform:translateY(10px);z-index:999;border:none;cursor:pointer}
+  #btt.vis{opacity:1;pointer-events:auto;transform:translateY(0)}
+  #btt:hover{background:#c94a1a}
+
+  /* FADE IN */
+  .fu{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+  .fu.on{opacity:1;transform:none}
+
+  /* MOBILE MENU */
+  .mob-menu{position:fixed;inset:0;background:var(--cream);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transform:translateX(100%);transition:transform .35s ease}
+  .mob-menu.open{transform:none}
+  .mob-menu a{font-family:var(--fd);font-size:1.8rem;font-weight:700}
+  .mob-close{position:absolute;top:20px;right:24px;font-size:1.8rem;background:none;border:none;cursor:pointer}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header role="banner">
+  <div class="ni">
+    <a href="/" aria-label="ZB Creative home">
+      <img src="../ZB_Creative_Logo.png" alt="ZB Creative — web design agency" class="nl" height="72" />
+    </a>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#ai-section">AI Search</a></li>
+        <li><a href="/#process">How It Works</a></li>
+        <li><a href="/#founder">About</a></li>
+        <li><a href="/#reviews">Results</a></li>
+        <li><a href="/portfolio" class="active">Portfolio</a></li>
+      </ul>
+    </nav>
+    <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor ncta">Get a Free Quote</a>
+    <button class="mtog" id="mtog" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mob-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="mob-close" id="mob-close" aria-label="Close menu">✕</button>
+  <a href="/#services" onclick="document.getElementById('mob-menu').classList.remove('open')">Services</a>
+  <a href="/#ai-section" onclick="document.getElementById('mob-menu').classList.remove('open')">AI Search</a>
+  <a href="/#process" onclick="document.getElementById('mob-menu').classList.remove('open')">How It Works</a>
+  <a href="/#founder" onclick="document.getElementById('mob-menu').classList.remove('open')">About</a>
+  <a href="/#reviews" onclick="document.getElementById('mob-menu').classList.remove('open')">Results</a>
+  <a href="/portfolio" onclick="document.getElementById('mob-menu').classList.remove('open')">Portfolio</a>
+  <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor">Get a Free Quote</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="phero">
+  <div class="w">
+    <div class="phero-inner">
+      <div>
+        <div class="phero-tags">
+          <span class="tag">✦ Our Work</span>
+          <span class="tag bl">Real Results</span>
+        </div>
+        <h1>Websites Built to<br><em>Get Found.</em></h1>
+        <p>Every site we build is designed to rank on Google, show up in AI search, and turn visitors into paying customers. Here's what that looks like in practice.</p>
+        <div class="pstats">
+          <div>
+            <div class="pstat-n">8+</div>
+            <div class="pstat-l">Years of<br>Experience</div>
+          </div>
+          <div>
+            <div class="pstat-n">#1</div>
+            <div class="pstat-l">AI & SEO<br>Strategy</div>
+          </div>
+          <div>
+            <div class="pstat-n">100%</div>
+            <div class="pstat-l">AI-Optimized<br>on Delivery</div>
+          </div>
+        </div>
+      </div>
+      <div class="phero-right">
+        <div class="pmini">
+          <div class="pmini-bg or">Pets and The City</div>
+          <span class="pmini-label">Pet Services · Kansas City</span>
+        </div>
+        <div class="pmini">
+          <div class="pmini-bg">Vaughn Vintage</div>
+          <span class="pmini-label">Event Visuals</span>
+        </div>
+        <div class="pmini">
+          <div class="pmini-bg ye">R&J Landscaping</div>
+          <span class="pmini-label">Landscaping</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER -->
+<div class="pfilt">
+  <div class="w">
+    <div class="pfilt-inner">
+      <span class="pfilt-label">Filter by:</span>
+      <button class="fchip on" data-filter="all">All Projects</button>
+      <button class="fchip" data-filter="restaurants">Restaurants</button>
+      <button class="fchip" data-filter="services">Service Businesses</button>
+      <button class="fchip" data-filter="retail">Retail & Events</button>
+      <button class="fchip" data-filter="wellness">Health & Wellness</button>
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO GRID -->
+<section class="pgrid-section">
+  <div class="w">
+    <div class="pgrid" id="pgrid">
+
+      <!-- FEATURED: Pets and The City -->
+      <article class="pcard feat fu" data-cat="services">
+        <div class="pcard-img">
+          <div class="pcard-ph c2">Pets and The City</div>
+          <span class="pcard-ph-note">Screenshot placeholder</span>
+          <div class="pcard-overlay">
+            <span class="pcard-live">🔗 View Site</span>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Pet Services · Kansas City, MO</div>
+          <div class="pcard-name">Pets and The City</div>
+          <div class="pcard-desc">A full rebrand and website build for a Kansas City pet sitting company. Now ranking on Google and getting discovered through ChatGPT searches for local pet sitters.</div>
+          <div class="pcard-tags">
+            <span class="ptag">Custom Design</span>
+            <span class="ptag">AI Search</span>
+            <span class="ptag">Local SEO</span>
+            <span class="ptag">Structured Data</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Vaughn Vintage -->
+      <article class="pcard fu" data-cat="retail">
+        <div class="pcard-img">
+          <div class="pcard-ph c1">Vaughn Vintage</div>
+          <span class="pcard-ph-note">Screenshot placeholder</span>
+          <div class="pcard-overlay">
+            <span class="pcard-live">🔗 View Site</span>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Event Visuals</div>
+          <div class="pcard-name">Vaughn Vintage</div>
+          <div class="pcard-desc">A bold, editorial site for an event visual designer. Built to attract venues and promoters searching for high-energy visual production services.</div>
+          <div class="pcard-tags">
+            <span class="ptag">Custom Design</span>
+            <span class="ptag">AI Search</span>
+            <span class="ptag">Technical SEO</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- R&J Landscaping -->
+      <article class="pcard fu" data-cat="services">
+        <div class="pcard-img">
+          <div class="pcard-ph c4">R&J Landscaping</div>
+          <span class="pcard-ph-note">Screenshot placeholder</span>
+          <div class="pcard-overlay">
+            <span class="pcard-live">🔗 View Site</span>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Landscaping · Missouri</div>
+          <div class="pcard-name">R&J Landscaping</div>
+          <div class="pcard-desc">A clean, modern site built to rank for local landscaping searches. Complete SEO guide delivered at handoff so the client stays ahead independently.</div>
+          <div class="pcard-tags">
+            <span class="ptag">Custom Design</span>
+            <span class="ptag">Local SEO</span>
+            <span class="ptag">SEO Guide</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Placeholder 1 -->
+      <article class="pcard fu" data-cat="restaurants">
+        <div class="pcard-img">
+          <div class="pcard-ph c3">Your Restaurant</div>
+          <span class="pcard-ph-note">Coming soon</span>
+          <div class="pcard-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Restaurant & Food Service</div>
+          <div class="pcard-name">Your Business Could Be Here</div>
+          <div class="pcard-desc">We're actively building sites for restaurants and food service businesses. Get in touch to see if we're a good fit.</div>
+          <div class="pcard-tags">
+            <span class="ptag">Menu Integration</span>
+            <span class="ptag">Local SEO</span>
+            <span class="ptag">AI Search</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Placeholder 2 -->
+      <article class="pcard fu" data-cat="wellness">
+        <div class="pcard-img">
+          <div class="pcard-ph c5">Wellness & Health</div>
+          <span class="pcard-ph-note">Coming soon</span>
+          <div class="pcard-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Health & Wellness</div>
+          <div class="pcard-name">Your Business Could Be Here</div>
+          <div class="pcard-desc">Spas, gyms, wellness studios, and healthcare providers. Built to rank and convert new clients from Google and AI search.</div>
+          <div class="pcard-tags">
+            <span class="ptag">Custom Design</span>
+            <span class="ptag">Booking Integration</span>
+            <span class="ptag">Local SEO</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Placeholder 3 -->
+      <article class="pcard fu" data-cat="services">
+        <div class="pcard-img">
+          <div class="pcard-ph c6">Trades & Contractors</div>
+          <span class="pcard-ph-note">Coming soon</span>
+          <div class="pcard-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Contractors & Trades</div>
+          <div class="pcard-name">Your Business Could Be Here</div>
+          <div class="pcard-desc">Plumbers, electricians, HVAC, and contractors. We build sites that generate leads from local search so your phone keeps ringing.</div>
+          <div class="pcard-tags">
+            <span class="ptag">Lead Generation</span>
+            <span class="ptag">Local SEO</span>
+            <span class="ptag">Structured Data</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="pcta">
+  <div class="w">
+    <h2>Ready to Join the<br><em>Portfolio?</em></h2>
+    <p>Let's build something you're proud to show off.</p>
+    <div class="pcta-btns">
+      <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bwh">📅 Book a Free Consultation</a>
+      <a href="mailto:zack@zbcreative.agency" class="btn bwho">✉ Email Zack</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="w">
+    <div class="fgr">
+      <div>
+        <img src="../ZB_Creative_Logo_Footer.png" alt="ZB Creative web design agency" class="flo" height="140" loading="lazy" />
+        <p class="fde">ZB Creative builds modern, AI-optimized websites for small businesses. Get found on Google, ChatGPT, and every AI assistant your customers use.</p>
+        <address class="fna">
+          <strong>ZB Creative</strong><br>
+          United States (Remote, Serving Nationwide)<br>
+          <a href="mailto:zack@zbcreative.agency">zack@zbcreative.agency</a>
+        </address>
+        <div class="sor">
+          <a href="https://instagram.com/zbcreative.agency" class="soc" aria-label="Instagram" target="_blank" rel="noopener"
+             onclick="if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){var t=setTimeout(function(){window.location='https://instagram.com/zbcreative.agency'},500);window.location='instagram://user?username=zbcreative.agency';return false;}">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/zackbalzer" class="soc" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="fct2">Services</div>
+        <ul class="fli">
+          <li><a href="/#services">Custom Website Design</a></li>
+          <li><a href="/#ai-section">SEO Optimization</a></li>
+          <li><a href="/#ai-section">AI Search Optimization</a></li>
+          <li><a href="/#services">Website Refresh</a></li>
+          <li><a href="/#services">Technical SEO</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct2">Company</div>
+        <ul class="fli">
+          <li><a href="/#wh">About ZB Creative</a></li>
+          <li><a href="/#process">Our Process</a></li>
+          <li><a href="/#reviews">Client Results</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct2">Industries</div>
+        <ul class="fli">
+          <li><a href="/#contact">Restaurants</a></li>
+          <li><a href="/#contact">Barbershops & Salons</a></li>
+          <li><a href="/#contact">Health & Wellness</a></li>
+          <li><a href="/#contact">Contractors & Trades</a></li>
+          <li><a href="/#contact">Retail & Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbo">
+      <span>© 2026 ZB Creative. All rights reserved.</span>
+      <span>Built with ❤️ &amp; structured data for maximum AI discoverability.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // Mobile menu
+  document.getElementById('mtog').addEventListener('click',()=>document.getElementById('mob-menu').classList.add('open'));
+  document.getElementById('mob-close').addEventListener('click',()=>document.getElementById('mob-menu').classList.remove('open'));
+
+  // Filter chips
+  document.querySelectorAll('.fchip').forEach(chip=>{
+    chip.addEventListener('click',()=>{
+      document.querySelectorAll('.fchip').forEach(c=>c.classList.remove('on'));
+      chip.classList.add('on');
+      const filter = chip.dataset.filter;
+      document.querySelectorAll('.pcard').forEach(card=>{
+        const show = filter==='all' || card.dataset.cat===filter;
+        card.style.display = show ? '' : 'none';
+      });
+    });
+  });
+
+  // Scroll fade-in
+  const obs = new IntersectionObserver(
+    entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),
+    {threshold:0.08,rootMargin:'0px 0px -30px 0px'}
+  );
+  document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+  // Back to top
+  const btt = document.getElementById('btt');
+  window.addEventListener('scroll',()=>btt.classList.toggle('vis',window.scrollY>400),{passive:true});
+</script>
+</body>
+</html>
