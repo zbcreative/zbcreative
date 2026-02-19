@@ -1020,4 +1020,14 @@ footer{background:var(--ch);padding:clamp(48px,6vw,80px) 0 30px;color:rgba(255,2
 
   const btt = document.getElementById('btt');
   window.addEventListener('scroll', function(){
-    btt.c
+    btt.classList.toggle('vis', window.scrollY > 400);
+  }, {passive:true});
+
+  const obs=new IntersectionObserver(
+    entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),
+    {threshold:0.08,rootMargin:'0px 0px -30px 0px'}
+  );
+  document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
