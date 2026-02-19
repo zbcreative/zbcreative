@@ -82,6 +82,51 @@
   .pmini:first-child{grid-column:span 2;aspect-ratio:16/7}
   .pmini-bg{width:100%;height:100%;background:linear-gradient(135deg,var(--bl-dk),var(--bl));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:.05em;text-transform:uppercase}
   .pmini-bg.or{background:linear-gradient(135deg,#a33218,var(--or))}
+
+  /* ── PORTFOLIO HERO VISUAL ───────────────────────────────── */
+  .pvis-wrap{position:relative;padding:24px 24px 24px 0}
+
+  /* Browser mockup */
+  .pbrowser{background:var(--wh);border-radius:12px;box-shadow:var(--slg);overflow:hidden;border:1.5px solid rgba(26,26,26,.08)}
+  .pbrowser-bar{display:flex;align-items:center;gap:10px;padding:9px 14px;background:var(--cream-dk);border-bottom:1.5px solid rgba(26,26,26,.07)}
+  .pbrowser-dots{display:flex;gap:5px}
+  .pbrowser-dots span{width:8px;height:8px;border-radius:50%;display:block}
+  .pbrowser-url{flex:1;text-align:center;font-size:.68rem;color:var(--gl);background:var(--cream);border-radius:20px;padding:3px 10px;font-family:var(--fb)}
+  .pbrowser-screen{background:var(--cream);overflow:hidden}
+
+  /* Mini site inside browser */
+  .psite{position:relative;overflow:hidden;min-height:200px}
+  .psite-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(26,26,26,.07) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
+  .psite-nav{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;background:rgba(245,240,228,.95);border-bottom:1px solid rgba(26,26,26,.06);position:relative;z-index:1}
+  .psite-logo{font-family:var(--fd);font-weight:900;font-size:.75rem;color:var(--or);letter-spacing:-.01em}
+  .psite-logo span{color:var(--ch);margin-left:2px}
+  .psite-links{display:flex;align-items:center;gap:8px}
+  .psite-links span{font-size:.52rem;color:var(--gm);font-family:var(--fb)}
+  .psite-cta{background:var(--or)!important;color:#fff!important;padding:3px 8px;border-radius:20px;font-weight:700!important}
+  .psite-hero{padding:18px 16px 22px;position:relative;z-index:1}
+  .psite-tag{display:inline-flex;align-items:center;background:var(--ye);color:var(--ch);font-size:.5rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:20px;margin-bottom:8px}
+  .psite-h1{font-family:var(--fd);font-size:1.35rem;font-weight:900;line-height:1.08;letter-spacing:-.025em;color:var(--ch);margin-bottom:6px}
+  .psite-h1 em{font-style:italic;color:var(--or)}
+  .psite-sub{font-size:.58rem;color:var(--gm);line-height:1.6;margin-bottom:10px;max-width:220px}
+  .psite-btns{display:flex;gap:6px}
+  .psite-btn-or{background:var(--or);color:#fff;font-size:.55rem;font-weight:700;padding:5px 12px;border-radius:20px;box-shadow:0 3px 0 #a33218}
+  .psite-btn-gh{background:var(--wh);color:var(--ch);font-size:.55rem;font-weight:600;padding:4px 11px;border-radius:20px;border:1.5px solid var(--ch);box-shadow:2px 2px 0 var(--ch)}
+
+  /* Floating badges */
+  .pfloat{position:absolute;background:var(--wh);border-radius:12px;padding:8px 11px;display:flex;align-items:center;gap:9px;box-shadow:var(--smd);border:1.5px solid rgba(26,26,26,.06);z-index:10;animation:floatbob 4s ease-in-out infinite}
+  .pfloat-tr{top:-14px;right:-14px;animation-delay:0s}
+  .pfloat-bl{bottom:24px;left:-14px;animation-delay:1.4s}
+  .pfloat-br{bottom:-14px;right:10px;animation-delay:2.6s}
+  @keyframes floatbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+  .pfloat-title{font-family:var(--fd);font-size:.72rem;font-weight:700;color:var(--ch);white-space:nowrap}
+  .pfloat-sub{font-size:.6rem;color:var(--gl);white-space:nowrap;margin-top:1px}
+  .pfloat-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#fff;flex-shrink:0}
+  .pfi-bl{background:var(--bl)}
+  .pfloat-pulse-wrap{width:28px;height:28px;border-radius:8px;background:rgba(217,79,43,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .pfloat-pulse{width:10px;height:10px;border-radius:50%;background:var(--or);box-shadow:0 0 0 0 rgba(217,79,43,.4);animation:ripple 2s infinite}
+  @keyframes ripple{0%{box-shadow:0 0 0 0 rgba(217,79,43,.4)}70%{box-shadow:0 0 0 8px rgba(217,79,43,0)}100%{box-shadow:0 0 0 0 rgba(217,79,43,0)}}
+  .pfloat-score-wrap{position:relative;width:40px;height:40px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+  .pfloat-num{position:absolute;font-family:var(--fd);font-size:.68rem;font-weight:900;color:var(--or)}
   .pmini-bg.ye{background:linear-gradient(135deg,#c49200,var(--ye));color:rgba(26,26,26,.5)}
   .pmini-label{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,.55);color:#fff;font-size:.68rem;font-weight:600;padding:4px 10px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;backdrop-filter:blur(6px)}
   @media(max-width:760px){.phero-inner{grid-template-columns:1fr}.phero-right{display:none}}
@@ -238,17 +283,133 @@
         </div>
       </div>
       <div class="phero-right">
-        <div class="pmini">
-          <div class="pmini-bg or">Pets and The City</div>
-          <span class="pmini-label">Pet Services · Kansas City</span>
-        </div>
-        <div class="pmini">
-          <div class="pmini-bg">Vaughn Vintage</div>
-          <span class="pmini-label">Event Visuals</span>
-        </div>
-        <div class="pmini">
-          <div class="pmini-bg ye">R&J Landscaping</div>
-          <span class="pmini-label">Landscaping</span>
+        <div class="pvis-wrap">
+
+          <!-- Browser chrome mockup -->
+          <div class="pbrowser">
+            <div class="pbrowser-bar">
+              <div class="pbrowser-dots">
+                <span style="background:#ff5f57"></span>
+                <span style="background:#ffbd2e"></span>
+                <span style="background:#28c840"></span>
+              </div>
+              <div class="pbrowser-url">rjlandscapingmo.com</div>
+            </div>
+            <div class="pbrowser-screen">
+              <div class="psite" style="background:linear-gradient(135deg,#f5f2ea 0%,#eef0e8 100%);">
+                <!-- R&J Nav -->
+                <div class="psite-nav" style="background:#fff;border-bottom:1px solid rgba(0,0,0,.07);">
+                  <span class="psite-logo" style="color:#1a4d2e;display:flex;align-items:center;gap:3px;">
+                    <span style="width:10px;height:10px;border-radius:50%;background:#1a4d2e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                      <svg width="6" height="6" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C8 2 5 7 5 11c0 3 2 5.5 5 6.3V20h4v-2.7c3-.8 5-3.3 5-6.3 0-4-3-9-7-9z"/><rect x="11" y="18" width="2" height="4" fill="#5d4037"/></svg>
+                    </span>
+                    <span style="font-family:Georgia,serif;font-weight:700;font-size:.68rem;color:#1a3d20;">R&amp;J Landscaping</span>
+                  </span>
+                  <div class="psite-links">
+                    <span>Services</span><span>About</span><span>Areas</span>
+                    <span class="psite-cta" style="background:#1a4d2e!important;color:#fff!important;border-radius:20px!important;">Call Now</span>
+                  </div>
+                </div>
+                <!-- R&J Hero -->
+                <div class="psite-hero" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center;padding:12px 14px 14px;">
+                  <div>
+                    <div class="psite-tag" style="background:#fff;color:#444;border:1px solid rgba(0,0,0,.1);font-size:.46rem;margin-bottom:6px;display:inline-flex;align-items:center;gap:2px;">
+                      <svg width="5" height="5" viewBox="0 0 24 24" fill="none" stroke="#1a4d2e" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      Fully Insured · Est. 2023
+                    </div>
+                    <div class="psite-h1" style="font-family:Georgia,serif;color:#1a2e10;font-size:1.05rem;">Your Yard<br>Deserves<br><em style="color:#2d6a2d;font-style:italic;">Expert Care</em></div>
+                    <div class="psite-sub" style="font-size:.52rem;color:#666;margin-bottom:8px;line-height:1.5;max-width:100px;">Professional lawn care &amp; snow removal across Olivette, Creve Coeur &amp; St. Louis County.</div>
+                    <div class="psite-btns" style="gap:4px;">
+                      <span class="psite-btn-or" style="background:#1a4d2e;box-shadow:0 3px 0 #0d2e18;border-radius:20px;font-size:.5rem;padding:4px 9px;">Get Free Estimate</span>
+                      <span class="psite-btn-gh" style="color:#1a4d2e;border-color:#1a4d2e;box-shadow:1.5px 1.5px 0 #1a4d2e;border-radius:20px;font-size:.5rem;padding:3px 8px;">View Services</span>
+                    </div>
+                  </div>
+                  <!-- Mini house illustration -->
+                  <div style="height:100%;display:flex;align-items:flex-end;">
+                    <svg viewBox="0 0 100 110" style="width:100%;border-radius:6px;overflow:hidden;">
+                      <defs>
+                        <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6bbdd4"/><stop offset="100%" stop-color="#a8daea"/></linearGradient>
+                        <linearGradient id="hgrass" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#43a047"/><stop offset="100%" stop-color="#1b5e20"/></linearGradient>
+                      </defs>
+                      <rect width="100" height="110" fill="url(#hsky)"/>
+                      <circle cx="80" cy="18" r="13" fill="#ffe566" opacity=".95"/>
+                      <ellipse cx="22" cy="26" rx="11" ry="5" fill="#d4eff7" opacity=".85"/>
+                      <ellipse cx="60" cy="21" rx="8" ry="4" fill="#d4eff7" opacity=".75"/>
+                      <ellipse cx="50" cy="82" rx="58" ry="28" fill="#388e3c"/>
+                      <rect x="0" y="88" width="100" height="22" fill="url(#hgrass)"/>
+                      <!-- Left tree -->
+                      <rect x="13" y="66" width="4" height="20" rx="1.5" fill="#6d4c41"/>
+                      <circle cx="16" cy="56" r="12" fill="#2e7d32"/>
+                      <circle cx="14" cy="52" r="9" fill="#43a047"/>
+                      <!-- House -->
+                      <rect x="36" y="65" width="28" height="22" rx="1" fill="#f5f0e8"/>
+                      <polygon points="32,66 50,50 68,66" fill="#c0392b"/>
+                      <rect x="40" y="70" width="7" height="5" rx="0.5" fill="#a8d8ea"/>
+                      <rect x="53" y="70" width="7" height="5" rx="0.5" fill="#a8d8ea"/>
+                      <rect x="46" y="76" width="8" height="11" rx="1" fill="#795548"/>
+                      <!-- Right tree -->
+                      <rect x="78" y="72" width="3" height="16" rx="1" fill="#6d4c41"/>
+                      <circle cx="80" cy="65" r="9" fill="#2e7d32"/>
+                      <circle cx="78" cy="62" r="6" fill="#43a047"/>
+                      <!-- Fence -->
+                      <line x1="68" y1="79" x2="88" y2="79" stroke="#e0ddd6" stroke-width="1.2"/>
+                      <line x1="68" y1="83" x2="88" y2="83" stroke="#e0ddd6" stroke-width="1.2"/>
+                      <rect x="68" y="76" width="2" height="9" rx="0.5" fill="#ede8df"/>
+                      <rect x="72" y="76" width="2" height="9" rx="0.5" fill="#ede8df"/>
+                      <rect x="76" y="76" width="2" height="9" rx="0.5" fill="#ede8df"/>
+                      <rect x="80" y="76" width="2" height="9" rx="0.5" fill="#ede8df"/>
+                      <rect x="84" y="76" width="2" height="9" rx="0.5" fill="#ede8df"/>
+                      <!-- Flowers -->
+                      <circle cx="30" cy="92" r="1.2" fill="#e53935"/>
+                      <circle cx="36" cy="90" r="1" fill="#ff7043"/>
+                      <circle cx="60" cy="91" r="1.2" fill="#ffa726"/>
+                      <circle cx="66" cy="89" r="1" fill="#ef9a9a"/>
+                      <!-- Trusted badge -->
+                      <rect x="52" y="4" width="44" height="9" rx="4" fill="#fff" opacity=".92"/>
+                      <text x="57" y="10.5" font-size="4.5" font-family="system-ui" font-weight="700" fill="#222">⭐ Trusted Since 2023</text>
+                    </svg>
+                  </div>
+                </div>
+                <div class="psite-dots"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating badge: AI ready (top right) -->
+          <div class="pfloat pfloat-tr">
+            <div class="pfloat-icon pfi-bl">✦</div>
+            <div>
+              <div class="pfloat-title">AI Search Ready</div>
+              <div class="pfloat-sub">ChatGPT · Perplexity · Gemini</div>
+            </div>
+          </div>
+
+          <!-- Floating badge: live sites (bottom left) -->
+          <div class="pfloat pfloat-bl">
+            <div class="pfloat-pulse-wrap"><div class="pfloat-pulse"></div></div>
+            <div>
+              <div class="pfloat-title">3 Sites Live</div>
+              <div class="pfloat-sub">Ranking &amp; getting found</div>
+            </div>
+          </div>
+
+          <!-- Floating badge: SEO score (bottom right) -->
+          <div class="pfloat pfloat-br">
+            <div class="pfloat-score-wrap">
+              <svg viewBox="0 0 36 36" width="40" height="40" style="display:block">
+                <circle cx="18" cy="18" r="14" fill="none" stroke="rgba(26,26,26,.08)" stroke-width="3"/>
+                <circle cx="18" cy="18" r="14" fill="none" stroke="#D94F2B" stroke-width="3"
+                  stroke-dasharray="82 88" stroke-dashoffset="22" stroke-linecap="round"
+                  transform="rotate(-90 18 18)"/>
+              </svg>
+              <span class="pfloat-num">92</span>
+            </div>
+            <div>
+              <div class="pfloat-title">SEO Score</div>
+              <div class="pfloat-sub">Avg. at launch</div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -318,18 +479,195 @@
       </article>
 
       <!-- R&J Landscaping -->
-      <article class="pcard fu" data-cat="services">
+      <article class="pcard fu" data-cat="services" onclick="window.open('https://rjlandscapingmo.com/','_blank')" style="cursor:pointer">
         <div class="pcard-img">
-          <div class="pcard-ph c4">R&J Landscaping</div>
-          <span class="pcard-ph-note">Screenshot placeholder</span>
+          <!-- Mini site preview matching rjlandscapingmo.com hero exactly -->
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#f5f2ea 0%,#eef0e8 50%,#f0ede4 100%);overflow:hidden;position:relative;font-family:Georgia,serif;">
+
+            <!-- NAV — white bar, logo left, links + pill CTA right -->
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:5px 10px 5px 8px;background:#fff;border-bottom:1px solid rgba(0,0,0,.06);">
+              <div style="display:flex;align-items:center;gap:3px;">
+                <!-- Tree icon circle -->
+                <div style="width:11px;height:11px;border-radius:50%;background:#1a4d2e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg width="7" height="7" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C8 2 5 7 5 11c0 3 2 5.5 5 6.3V20h4v-2.7c3-.8 5-3.3 5-6.3 0-4-3-9-7-9z"/><rect x="11" y="18" width="2" height="4" fill="#5d4037"/></svg>
+                </div>
+                <span style="font-family:Georgia,serif;font-weight:700;font-size:5.5px;color:#1a3d20;letter-spacing:.01em;">R&amp;J Landscaping</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:5px;">
+                <span style="font-size:4px;color:#555;font-family:system-ui,sans-serif;">Services</span>
+                <span style="font-size:4px;color:#555;font-family:system-ui,sans-serif;">About</span>
+                <span style="font-size:4px;color:#555;font-family:system-ui,sans-serif;">Areas</span>
+                <span style="font-size:4px;color:#555;font-family:system-ui,sans-serif;">FAQ</span>
+                <span style="background:#1a4d2e;color:#fff;font-size:4px;font-weight:700;font-family:system-ui,sans-serif;padding:2.5px 6px;border-radius:20px;">Call Now</span>
+              </div>
+            </div>
+
+            <!-- HERO BODY — two column layout matching screenshot -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;height:calc(100% - 22px);align-items:center;padding:8px 10px 6px 10px;position:relative;">
+
+              <!-- LEFT: text content -->
+              <div style="padding-right:6px;">
+                <!-- Pill badge -->
+                <div style="display:inline-flex;align-items:center;gap:3px;background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:20px;padding:2px 6px;margin-bottom:5px;">
+                  <svg width="5" height="5" viewBox="0 0 24 24" fill="none" stroke="#1a4d2e" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span style="font-size:4px;color:#444;font-family:system-ui,sans-serif;font-weight:600;">Fully Insured · Est. 2023</span>
+                </div>
+                <!-- Main heading — dark green serif, matches screenshot weight -->
+                <div style="font-family:Georgia,serif;font-weight:900;font-size:10px;color:#1a2e10;line-height:1.12;margin-bottom:4px;letter-spacing:-.01em;">Your Yard<br>Deserves<br><span style="color:#2d6a2d;">Expert Care</span></div>
+                <!-- Body text -->
+                <div style="font-size:3.8px;color:#555;font-family:system-ui,sans-serif;line-height:1.55;margin-bottom:6px;max-width:110px;">R&amp;J Landscaping delivers professional lawn care, seasonal maintenance, and snow removal to homes and businesses across Olivette, Creve Coeur, and St. Louis County.</div>
+                <!-- CTA buttons — pill shaped, matching screenshot exactly -->
+                <div style="display:flex;gap:3px;align-items:center;">
+                  <span style="background:#1a4d2e;color:#fff;font-size:3.8px;font-weight:700;font-family:system-ui,sans-serif;padding:3px 7px;border-radius:20px;display:flex;align-items:center;gap:2px;">
+                    <svg width="4" height="4" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+                    Get Free Estimate
+                  </span>
+                  <span style="background:transparent;color:#1a4d2e;font-size:3.8px;font-weight:600;font-family:system-ui,sans-serif;padding:2.5px 6px;border-radius:20px;border:1px solid #1a4d2e;">View Services</span>
+                </div>
+              </div>
+
+              <!-- RIGHT: illustrated house/yard scene matching screenshot -->
+              <div style="position:relative;height:100%;display:flex;align-items:flex-end;justify-content:center;">
+                <!-- Card container with rounded corners like screenshot -->
+                <div style="width:100%;height:95%;background:#87ceeb;border-radius:8px;overflow:hidden;position:relative;">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" style="width:100%;height:100%;display:block;">
+                    <!-- Sky -->
+                    <rect width="200" height="260" fill="#87ceea"/>
+                    <!-- Sky gradient overlay -->
+                    <defs>
+                      <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#6bbdd4"/>
+                        <stop offset="55%" stop-color="#a8daea"/>
+                      </linearGradient>
+                      <linearGradient id="hillG" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#4caf50"/>
+                        <stop offset="100%" stop-color="#2e7d32"/>
+                      </linearGradient>
+                      <linearGradient id="fgG" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#43a047"/>
+                        <stop offset="100%" stop-color="#1b5e20"/>
+                      </linearGradient>
+                      <radialGradient id="sunG" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffe566"/>
+                        <stop offset="100%" stop-color="#f9c80e"/>
+                      </radialGradient>
+                    </defs>
+                    <rect width="200" height="260" fill="url(#skyG)"/>
+
+                    <!-- Sun — top right, large, soft yellow -->
+                    <circle cx="162" cy="38" r="26" fill="url(#sunG)" opacity="0.95"/>
+
+                    <!-- Cloud left — two overlapping ellipses, light blue-white -->
+                    <ellipse cx="38" cy="54" rx="22" ry="10" fill="#c8e8f5" opacity="0.9"/>
+                    <ellipse cx="55" cy="52" rx="14" ry="8" fill="#d4eff7" opacity="0.9"/>
+                    <ellipse cx="27" cy="56" rx="10" ry="7" fill="#d4eff7" opacity="0.85"/>
+
+                    <!-- Cloud mid-right — smaller -->
+                    <ellipse cx="128" cy="44" rx="16" ry="7" fill="#d4eff7" opacity="0.8"/>
+                    <ellipse cx="140" cy="42" rx="10" ry="6" fill="#dff3fa" opacity="0.75"/>
+
+                    <!-- Back hill — large rolling green, center -->
+                    <ellipse cx="100" cy="175" rx="115" ry="55" fill="#388e3c"/>
+
+                    <!-- Left back hill bump -->
+                    <ellipse cx="10" cy="195" rx="70" ry="45" fill="#2e7d32"/>
+
+                    <!-- Right back hill bump -->
+                    <ellipse cx="195" cy="200" rx="65" ry="42" fill="#33691e"/>
+
+                    <!-- Foreground grass — bottom half, rich green -->
+                    <rect x="0" y="185" width="200" height="75" fill="url(#fgG)"/>
+                    <!-- Foreground hill curve -->
+                    <ellipse cx="100" cy="185" rx="130" ry="28" fill="#43a047"/>
+
+                    <!-- ═══ LEFT TREE (big) ═══ -->
+                    <!-- Trunk -->
+                    <rect x="29" y="148" width="7" height="40" rx="2" fill="#6d4c41"/>
+                    <!-- Shadow canopy layer (darker, offset slightly) -->
+                    <circle cx="34" cy="130" r="22" fill="#2e7d32"/>
+                    <!-- Main canopy -->
+                    <circle cx="32" cy="126" r="24" fill="#388e3c"/>
+                    <!-- Highlight canopy top -->
+                    <circle cx="30" cy="118" r="16" fill="#43a047"/>
+
+                    <!-- ═══ HOUSE (center) ═══ -->
+                    <!-- House wall — off-white/cream -->
+                    <rect x="74" y="148" width="52" height="40" rx="1" fill="#f5f0e8"/>
+                    <!-- Roof — red-orange triangle -->
+                    <polygon points="68,150 100,118 132,150" fill="#c0392b"/>
+                    <!-- Roof ridge line -->
+                    <line x1="68" y1="150" x2="132" y2="150" stroke="#a93226" stroke-width="1"/>
+                    <!-- Left window -->
+                    <rect x="79" y="156" width="13" height="10" rx="1" fill="#a8d8ea"/>
+                    <line x1="85.5" y1="156" x2="85.5" y2="166" stroke="#90c4d8" stroke-width="0.8"/>
+                    <line x1="79" y1="161" x2="92" y2="161" stroke="#90c4d8" stroke-width="0.8"/>
+                    <!-- Right window -->
+                    <rect x="108" y="156" width="13" height="10" rx="1" fill="#a8d8ea"/>
+                    <line x1="114.5" y1="156" x2="114.5" y2="166" stroke="#90c4d8" stroke-width="0.8"/>
+                    <line x1="108" y1="161" x2="121" y2="161" stroke="#90c4d8" stroke-width="0.8"/>
+                    <!-- Door — brown, centered, rounded top -->
+                    <rect x="93" y="163" width="14" height="25" rx="2" fill="#795548"/>
+                    <!-- Door knob -->
+                    <circle cx="104" cy="177" r="1.2" fill="#a1887f"/>
+                    <!-- Wall outline subtle -->
+                    <rect x="74" y="148" width="52" height="40" rx="1" fill="none" stroke="rgba(0,0,0,0.07)" stroke-width="0.8"/>
+
+                    <!-- ═══ RIGHT TREE (smaller) ═══ -->
+                    <!-- Trunk -->
+                    <rect x="153" y="162" width="5" height="26" rx="1.5" fill="#6d4c41"/>
+                    <!-- Shadow canopy -->
+                    <circle cx="157" cy="150" r="15" fill="#2e7d32"/>
+                    <!-- Main canopy -->
+                    <circle cx="155" cy="147" r="16" fill="#388e3c"/>
+                    <!-- Highlight -->
+                    <circle cx="153" cy="141" r="10" fill="#43a047"/>
+
+                    <!-- ═══ FENCE (right of house) ═══ -->
+                    <!-- Two horizontal rails -->
+                    <line x1="130" y1="172" x2="162" y2="172" stroke="#e0ddd6" stroke-width="2"/>
+                    <line x1="130" y1="180" x2="162" y2="180" stroke="#e0ddd6" stroke-width="2"/>
+                    <!-- Vertical pickets -->
+                    <rect x="130" y="166" width="3.5" height="17" rx="1" fill="#ede8df"/>
+                    <rect x="137" y="166" width="3.5" height="17" rx="1" fill="#ede8df"/>
+                    <rect x="144" y="166" width="3.5" height="17" rx="1" fill="#ede8df"/>
+                    <rect x="151" y="166" width="3.5" height="17" rx="1" fill="#ede8df"/>
+                    <rect x="158" y="166" width="3.5" height="17" rx="1" fill="#ede8df"/>
+
+                    <!-- ═══ FLOWER DOTS on grass ═══ -->
+                    <!-- Left cluster -->
+                    <circle cx="62" cy="196" r="2.2" fill="#e53935"/>
+                    <circle cx="70" cy="193" r="1.8" fill="#ef9a9a"/>
+                    <circle cx="55" cy="200" r="1.5" fill="#ff7043"/>
+                    <!-- Right cluster -->
+                    <circle cx="122" cy="197" r="2" fill="#ffa726"/>
+                    <circle cx="130" cy="194" r="1.8" fill="#ff7043"/>
+                    <circle cx="116" cy="201" r="1.5" fill="#ef9a9a"/>
+                  </svg>
+                  <!-- "Trusted Since 2023" badge (top right like screenshot) -->
+                  <div style="position:absolute;top:4px;right:4px;background:#fff;border-radius:5px;padding:2px 4px;display:flex;align-items:center;gap:2px;box-shadow:0 1px 4px rgba(0,0,0,.12);">
+                    <span style="font-size:5px;">⭐</span>
+                    <span style="font-size:3.5px;font-weight:700;color:#222;font-family:system-ui,sans-serif;">Trusted Since 2023</span>
+                  </div>
+                  <!-- "Fully Insured" badge (bottom like screenshot) -->
+                  <div style="position:absolute;bottom:4px;left:50%;transform:translateX(-50%);background:#fff;border-radius:5px;padding:2px 5px;display:flex;align-items:center;gap:2px;box-shadow:0 1px 4px rgba(0,0,0,.12);white-space:nowrap;">
+                    <svg width="5" height="5" viewBox="0 0 24 24" fill="none" stroke="#1a4d2e" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <div>
+                      <div style="font-size:3.8px;font-weight:700;color:#111;font-family:system-ui,sans-serif;line-height:1.2;">Fully Insured</div>
+                      <div style="font-size:3px;color:#666;font-family:system-ui,sans-serif;">Your property is protected</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="pcard-overlay">
             <span class="pcard-live">🔗 View Site</span>
           </div>
         </div>
         <div class="pcard-body">
-          <div class="pcard-cat">Landscaping · Missouri</div>
-          <div class="pcard-name">R&J Landscaping</div>
-          <div class="pcard-desc">A clean, modern site built to rank for local landscaping searches. Complete SEO guide delivered at handoff so the client stays ahead independently.</div>
+          <div class="pcard-cat">Landscaping · Olivette &amp; Creve Coeur, MO</div>
+          <div class="pcard-name">R&amp;J Landscaping</div>
+          <div class="pcard-desc">A clean, modern site built to rank for local landscaping searches in Olivette, Creve Coeur, and St. Louis County. Complete SEO guide delivered at handoff.</div>
           <div class="pcard-tags">
             <span class="ptag">Custom Design</span>
             <span class="ptag">Local SEO</span>
