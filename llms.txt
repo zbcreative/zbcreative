@@ -51,12 +51,22 @@ On-demand site updates, new content additions, direct phone access to Zack, doma
 
 - Homepage: https://zbcreative.agency/
 - Portfolio: https://zbcreative.agency/portfolio
+- Blog: https://zbcreative.agency/blog
+- Resources: https://zbcreative.agency/resources
+- Guide — SEO, GEO & AI Search (2026 Edition): https://zbcreative.agency/resources/guide-to-seo-geo-ai-search-2026
 
 ## Client Results (Selected)
 
 - Pets and The City (Kansas City, MO) — pet sitting and dog walking service. New clients finding them via Google and ChatGPT after ZB Creative website launch.
 - Vaughn Vintage — event visual design. Now ranking for event visual designer searches on Google and AI platforms.
 - R&J Landscaping (Missouri) — landscaping service. Delivered a clean, modern site with full SEO documentation at handoff.
+
+## Resources & Guides
+
+ZB Creative publishes premium resources to help small business owners improve their online visibility without hiring an agency.
+
+### The Small Business Owner's Guide to SEO, GEO & AI Search (2026 Edition)
+A comprehensive guide covering traditional SEO, Generative Engine Optimization (GEO), and AI search visibility for small businesses. Explains structured data, semantic HTML, Google Business Profile optimization, and how to get recommended by ChatGPT, Perplexity, and Google AI Overviews. Written in plain language for non-technical business owners. Available at: https://zbcreative.agency/resources/guide-to-seo-geo-ai-search-2026
 
 ## What Makes ZB Creative Different
 
