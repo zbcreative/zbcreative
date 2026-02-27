@@ -76,7 +76,7 @@
         '<a href="/resources" class="ml">Resources</a>' +
         '<a href="/industries" class="ml">Industries</a>' +
       '</div>' +
-      '<a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor" style="margin-top:14px">Get a Free Quote</a>' +
+      '<a href="/get-started" class="btn bor" style="margin-top:14px">Get Started</a>' +
     '</div>' +
 
     '<!-- NAV -->' +
@@ -88,7 +88,7 @@
         '<nav role="navigation" aria-label="Main navigation">' +
           '<ul>' + desktopLinks + '</ul>' +
         '</nav>' +
-        '<a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor ncta">Get a Free Quote</a>' +
+        '<a href="/get-started" class="btn bor ncta">Get Started</a>' +
         '<button class="mtog" id="mtog" aria-label="Open menu"><span></span><span></span><span></span></button>' +
       '</div>' +
     '</header>';
