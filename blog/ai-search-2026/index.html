@@ -69,20 +69,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none} button{c
 .bor:active{transform:translateY(1px);box-shadow:0 1px 0 #a33218}
 .bch{background:var(--wh);color:var(--ch);border:2px solid var(--ch);box-shadow:3px 3px 0 var(--ch)}
 .bch:hover{background:var(--cream-dk);transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ch)}
-header{position:fixed;top:0;left:0;right:0;z-index:100}
-.ni{display:flex;align-items:center;justify-content:space-between;padding:10px clamp(20px,5vw,48px);background:rgba(245,240,228,.93);backdrop-filter:blur(14px);border-bottom:1.5px solid rgba(26,26,26,.07)}
-.nl{height:72px;width:auto}
-nav ul{display:flex;align-items:center;gap:clamp(16px,2.4vw,30px)}
-nav a{font-family:var(--fd);font-size:.9rem;font-weight:700;letter-spacing:-.01em;transition:color .2s;position:relative}
-nav a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:2px;background:var(--or);transform:scaleX(0);transition:transform .2s}
-nav a:hover{color:var(--or)} nav a:hover::after{transform:scaleX(1)}
-nav a.active{color:var(--or)} nav a.active::after{transform:scaleX(1)}
-.mtog{display:none;flex-direction:column;gap:5px;padding:8px}
-.mtog span{display:block;width:24px;height:2px;background:var(--ch);border-radius:2px;transition:all .3s}
-.mm{display:none;position:fixed;inset:0;z-index:99;background:var(--cream);flex-direction:column;align-items:center;justify-content:center;gap:18px;opacity:0;pointer-events:none;transition:opacity .3s;padding-top:80px;padding-bottom:32px;overflow-y:auto}
-.mm.on{opacity:1;pointer-events:all}
-.mm a{font-family:var(--fd);font-size:1.6rem;font-weight:900;transition:color .2s} .mm a:hover{color:var(--or)}
-.mcl{position:absolute;top:18px;right:22px;font-size:1.8rem;color:var(--ch)}
+/* NAV — handled by /nav.js */
 .breadcrumb{padding:18px 0 0;position:relative;z-index:1}
 .breadcrumb ol{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--gl)}
 .breadcrumb a{color:var(--gm);transition:color .2s} .breadcrumb a:hover{color:var(--or)}
@@ -131,7 +118,7 @@ footer{background:var(--ch);padding:clamp(48px,7vw,80px) 0 0}
 #btt.vis{opacity:1;pointer-events:auto;transform:translateY(0)}
 #btt:hover{background:#c94a1a}
 @media(max-width:900px){
-  nav ul{display:none} .ncta{display:none} .mtog{display:flex} .mm{display:flex}
+  /* Nav — handled by /nav.js */
   .fgr{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
@@ -146,39 +133,9 @@ footer{background:var(--ch);padding:clamp(48px,7vw,80px) 0 0}
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWL6VWLP"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- Mobile overlay -->
-<div class="mm" id="mm" role="dialog" aria-modal="true">
-  <button class="mcl" id="mcl" aria-label="Close menu">&#10005;</button>
-  <a href="/" class="ml">Home</a>
-  <a href="/#services" class="ml">Services</a>
-  <a href="/#ai-section" class="ml">AI Search</a>
-  <a href="/#process" class="ml">How It Works</a>
-  <a href="/#founder" class="ml">About</a>
-  <a href="/portfolio" class="ml">Portfolio</a>
-  <a href="/blog" class="ml">Blog</a>
-  <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor" style="margin-top:8px">Get a Free Quote</a>
-</div>
-
-<!-- NAV -->
-<header role="banner">
-  <div class="ni">
-    <a href="/" aria-label="ZB Creative home">
-      <img src="/ZB_Creative_Logo.png" alt="ZB Creative — web design agency" class="nl" height="72" />
-    </a>
-    <nav role="navigation" aria-label="Main navigation">
-      <ul>
-        <li><a href="/#services">Services</a></li>
-        <li><a href="/#ai-section">AI Search</a></li>
-        <li><a href="/#process">How It Works</a></li>
-        <li><a href="/#founder">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/blog" class="active">Blog</a></li>
-      </ul>
-    </nav>
-    <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor ncta">Get a Free Quote</a>
-    <button class="mtog" id="mtog" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
+<!-- NAV — shared across all pages -->
+<div id="site-nav"></div>
+<script src="/nav.js"></script>
 
 <main>
 
@@ -299,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <address class="fna">
           <strong>ZB Creative</strong><br>
           United States (Remote, Serving Nationwide)<br>
-          <a href="mailto:zack@zbcreative.agency">zack@zbcreative.agency</a>
+          <a href="/cdn-cgi/l/email-protection#ea908b8981aa908889988f8b9e839c8fc48b8d8f848993"><span class="__cf_email__" data-cfemail="3f455e5c547f455d5c4d5a5e4b56495a115e585a515c46">[email&#160;protected]</span></a>
         </address>
         <div class="sor">
           <a href="https://instagram.com/zbcreative.agency" class="soc" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
@@ -348,15 +305,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
 
-<script>
-const tog=document.getElementById('mtog'),menu=document.getElementById('mm'),cls=document.getElementById('mcl');
-const openMenu=()=>{menu.classList.add('on');document.body.style.overflow='hidden'};
-const closeMenu=()=>{menu.classList.remove('on');document.body.style.overflow=''};
-tog.addEventListener('click',()=>menu.classList.contains('on')?closeMenu():openMenu());
-cls.addEventListener('click',closeMenu);
-document.querySelectorAll('.ml').forEach(l=>l.addEventListener('click',closeMenu));
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Mobile menu — handled by /nav.js
+
+// Back to top
 const btt=document.getElementById('btt');
 window.addEventListener('scroll',()=>{btt.classList.toggle('vis',window.scrollY>400)},{passive:true});
+
+// Fade-in
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}})
+},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
