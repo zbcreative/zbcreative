@@ -837,22 +837,6 @@ filterBtns.forEach(btn=>{
   });
 });
 
-// Article view toggle
-const blogListSections=['.blog-hero','.blog-filters','.blog-section'];
-
-
-);
-  articleSections.forEach(s=>s.style.display='none');
-  const target=document.getElementById('article-'+slug);
-  if(target){target.style.display='block'}
-  document.getElementById('blog-cta').scrollIntoView({behavior:'instant',block:'end'});
-  window.scrollTo({top:0,behavior:'instant'});
-}
-
-);
-  window.scrollTo({top:0,behavior:'instant'});
-}
-
 // Fade-in animation
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';obs.unobserve(e.target)}})
