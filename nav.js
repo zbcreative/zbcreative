@@ -29,6 +29,7 @@
     '.mm-group+.mm-group{border-top:1.5px solid rgba(26,26,26,.1);margin-top:4px;padding-top:14px}' +
     '.mm-label{font-family:var(--fb);font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--gl);margin-bottom:6px}' +
     '.mcl{position:absolute;top:18px;right:22px;font-size:1.8rem;color:var(--ch)}' +
+    '.mm a.ml.active{color:var(--or)}' +
     '.ncta{display:inline-flex}' +
     '@media(max-width:640px){nav ul,.ncta{display:none} .mtog{display:flex} .mm{display:flex}}';
   document.head.appendChild(css);
@@ -155,5 +156,15 @@
     }
     window.addEventListener('scroll', setActive, { passive:true });
     setActive();
+  } else {
+    /* Highlight current page on subpages (desktop + mobile) */
+    var clean = p.replace(/\/$/,'') || '/';
+    document.querySelectorAll('.nav-link, .mm a.ml').forEach(function(link){
+      var href = (link.getAttribute('href') || '').replace(/\/$/,'');
+      /* Match exact path or parent path (e.g. /resources/guide → /resources) */
+      if(href && href.indexOf('#') === -1 && (clean === href || clean.indexOf(href + '/') === 0)){
+        link.classList.add('active');
+      }
+    });
   }
 })();
