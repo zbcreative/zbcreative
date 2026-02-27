@@ -51,23 +51,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   address{font-style:normal}
   .w{max-width:var(--mw);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
 
-  /* NAV */
-  header{position:fixed;top:0;left:0;right:0;z-index:100}
-  .ni{display:flex;align-items:center;justify-content:space-between;padding:10px clamp(20px,5vw,48px);background:rgba(245,240,228,.93);backdrop-filter:blur(14px);border-bottom:1.5px solid rgba(26,26,26,.07)}
-  .nl{height:72px;width:auto}
-  nav ul{display:flex;align-items:center;gap:clamp(16px,2.4vw,30px)}
-  nav a{font-family:var(--fd);font-size:.9rem;font-weight:700;letter-spacing:-.01em;transition:color .2s;position:relative}
-  nav a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:2px;background:var(--or);transform:scaleX(0);transition:transform .2s}
-  nav a:hover{color:var(--or)} nav a:hover::after,nav a.active::after{transform:scaleX(1)}
-  nav a.active{color:var(--or)}
+  /* NAV — handled by /nav.js */
   .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:var(--rp);font-weight:600;font-size:.93rem;transition:all .2s ease;white-space:nowrap}
   .bor{background:var(--or);color:var(--wh);box-shadow:0 4px 0 #a33218}
   .bor:hover{background:var(--or-lt);transform:translateY(-2px);box-shadow:0 6px 0 #a33218}
-  .ncta{display:none}
-  @media(min-width:900px){.ncta{display:inline-flex}}
-  .mtog{display:none;flex-direction:column;gap:5px;padding:8px}
-  .mtog span{width:24px;height:2px;background:var(--ch);border-radius:2px;transition:all .3s}
-  @media(max-width:899px){nav ul,.ncta{display:none}.mtog{display:flex}}
+  /* Mobile toggle — handled by /nav.js */
 
   /* TAG */
   .tag{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:5px 13px;border-radius:var(--rp);background:var(--ye);color:var(--ch)}
@@ -220,11 +208,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .fu{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
   .fu.on{opacity:1;transform:none}
 
-  /* MOBILE MENU */
-  .mob-menu{position:fixed;inset:0;background:var(--cream);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transform:translateX(100%);transition:transform .35s ease}
-  .mob-menu.open{transform:none}
-  .mob-menu a{font-family:var(--fd);font-size:1.8rem;font-weight:700}
-  .mob-close{position:absolute;top:20px;right:24px;font-size:1.8rem;background:none;border:none;cursor:pointer}
+  /* MOBILE MENU — handled by /nav.js */
 </style>
 </head>
 <body>
@@ -233,44 +217,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- NAV -->
-<header role="banner">
-  <div class="ni">
-    <a href="/" aria-label="ZB Creative home">
-      <img src="../ZB_Creative_Logo.png" alt="ZB Creative — web design agency" class="nl" height="72" />
-    </a>
-    <nav role="navigation" aria-label="Main navigation">
-      <ul>
-        <li><a href="/#services">Services</a></li>
-        <li><a href="/#ai-section">AI Search</a></li>
-        <li><a href="/#process">How It Works</a></li>
-        <li><a href="/#founder">About</a></li>
-        <li><a href="/#reviews">Results</a></li>
-        <li><a href="/portfolio" class="active">Portfolio</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/industries">Industries</a></li>
-      </ul>
-    </nav>
-    <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor ncta">Get a Free Quote</a>
-    <button class="mtog" id="mtog" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<!-- MOBILE MENU -->
-<div class="mob-menu" id="mob-menu" role="dialog" aria-label="Mobile navigation">
-  <button class="mob-close" id="mob-close" aria-label="Close menu">✕</button>
-  <a href="/#services" onclick="document.getElementById('mob-menu').classList.remove('open')">Services</a>
-  <a href="/#ai-section" onclick="document.getElementById('mob-menu').classList.remove('open')">AI Search</a>
-  <a href="/#process" onclick="document.getElementById('mob-menu').classList.remove('open')">How It Works</a>
-  <a href="/#founder" onclick="document.getElementById('mob-menu').classList.remove('open')">About</a>
-  <a href="/#reviews" onclick="document.getElementById('mob-menu').classList.remove('open')">Results</a>
-  <a href="/portfolio" onclick="document.getElementById('mob-menu').classList.remove('open')">Portfolio</a>
-  <a href="/blog" onclick="document.getElementById('mob-menu').classList.remove('open')">Blog</a>
-  <a href="/resources" onclick="document.getElementById('mob-menu').classList.remove('open')">Resources</a>
-  <a href="/industries" onclick="document.getElementById('mob-menu').classList.remove('open')">Industries</a>
-  <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor">Get a Free Quote</a>
-</div>
+<!-- NAV — shared across all pages -->
+<div id="site-nav"></div>
+<script src="/nav.js"></script>
 
 <main>
 
@@ -842,10 +791,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Mobile menu
-  document.getElementById('mtog').addEventListener('click',()=>document.getElementById('mob-menu').classList.add('open'));
-  document.getElementById('mob-close').addEventListener('click',()=>document.getElementById('mob-menu').classList.remove('open'));
-
   // Filter chips
   document.querySelectorAll('.fchip').forEach(chip=>{
     chip.addEventListener('click',()=>{
@@ -870,9 +815,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const btt = document.getElementById('btt');
   window.addEventListener('scroll',()=>btt.classList.toggle('vis',window.scrollY>400),{passive:true});
 
-  // Mobile menu
-  document.getElementById('mtog').addEventListener('click',()=>document.getElementById('mob-menu').classList.add('open'));
-  document.getElementById('mob-close').addEventListener('click',()=>document.getElementById('mob-menu').classList.remove('open'));
+
 </script>
 </body>
 </html>
