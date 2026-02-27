@@ -212,6 +212,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="/portfolio" class="ml">Portfolio</a>
   <a href="/blog" class="ml">Blog</a>
   <a href="/resources" class="ml" style="color:var(--or)">Resources</a>
+  <a href="/industries" class="ml">Industries</a>
   <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor" style="margin-top:8px">Get a Free Quote</a>
 </div>
 
@@ -230,6 +231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="/portfolio">Portfolio</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/resources" class="active">Resources</a></li>
+        <li><a href="/industries">Industries</a></li>
       </ul>
     </nav>
     <a href="https://calendly.com/zbcreative/30min" target="_blank" rel="noopener" class="btn bor ncta">Get a Free Quote</a>
@@ -386,7 +388,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <address class="fna">
           <strong>ZB Creative</strong><br>
           United States (Remote, Serving Nationwide)<br>
-          <!--email_off--><a href="mailto:zack@zbcreative.agency">zack@zbcreative.agency</a><!--/email_off-->
+          <a href="mailto:zack@zbcreative.agency">zack@zbcreative.agency</a>
         </address>
         <div class="sor">
           <a href="https://instagram.com/zbcreative.agency" class="soc" aria-label="Instagram" target="_blank" rel="noopener">
@@ -422,12 +424,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <div class="fct2">Industries We Serve</div>
         <ul class="fli">
-          <li><a href="/#contact">Restaurants & Food Service</a></li>
-          <li><a href="/#contact">Barbershops & Salons</a></li>
-          <li><a href="/#contact">Healthcare & Wellness</a></li>
-          <li><a href="/#contact">Legal & Professional</a></li>
-          <li><a href="/#contact">Contractors & Trades</a></li>
-          <li><a href="/#contact">Retail & E-Commerce</a></li>
+          <li><a href="/industries/medical">Medical Practices</a></li>
+          <li><a href="/industries/food-beverage">Restaurants & Food</a></li>
+          <li><a href="/industries/home-property">Home & Property</a></li>
+          <li><a href="/industries/fitness">Fitness & Wellness</a></li>
+          <li><a href="/industries/beauty-health-wellness">Beauty & Salons</a></li>
+          <li><a href="/industries/automotive">Automotive</a></li>
+          <li><a href="/industries">View All Industries →</a></li>
         </ul>
       </div>
     </div>
@@ -474,6 +477,11 @@ const obs=new IntersectionObserver(entries=>{
 document.querySelectorAll('.res-card').forEach(el=>{
   el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity .5s,transform .5s';
   obs.observe(el);
+});
+</script>
+</body>
+</html>
+);
 });
 </script>
 </body>
