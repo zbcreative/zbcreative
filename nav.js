@@ -83,7 +83,7 @@
     '<header role="banner">' +
       '<div class="ni">' +
         '<a href="/" aria-label="ZB Creative home">' +
-          '<img src="/ZB_Creative_Logo.png" alt="ZB Creative — web design agency" class="nl" height="72" />' +
+          '<img src="/ZB_Creative_Logo.webp" alt="ZB Creative — web design agency" class="nl" height="72" />' +
         '</a>' +
         '<nav role="navigation" aria-label="Main navigation">' +
           '<ul>' + desktopLinks + '</ul>' +
