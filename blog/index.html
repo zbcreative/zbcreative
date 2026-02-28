@@ -700,7 +700,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <address class="fna">
           <strong>ZB Creative</strong><br>
           United States (Remote, Serving Nationwide)<br>
-          <a href="/cdn-cgi/l/email-protection#3d475c5e567d475f5e4f585c49544b58135c5a58535e44"><span class="__cf_email__" data-cfemail="fc869d9f97bc869e9f8e999d88958a99d29d9b99929f85">[email&#160;protected]</span></a>
+          <a href="mailto:zack@zbcreative.agency">zack@zbcreative.agency</a>
         </address>
         <div class="sor">
           <a href="https://instagram.com/zbcreative.agency" class="soc" aria-label="Instagram" target="_blank" rel="noopener">
@@ -755,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // Mobile menu — handled by /nav.js
 
 // Back to top
@@ -783,4 +783,8 @@ filterBtns.forEach(btn=>{
 // Fade-in animation
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';obs.unobserve(e.target)}})
-},{threshold
+},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
