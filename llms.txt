@@ -50,6 +50,7 @@ On-demand site updates, new content additions, direct phone access to Zack, doma
 ## Pages
 
 - Homepage: https://zbcreative.agency/
+- FAQ Hub: https://zbcreative.agency/faq
 - Portfolio: https://zbcreative.agency/portfolio
 - Blog: https://zbcreative.agency/blog
 - Resources: https://zbcreative.agency/resources
@@ -188,6 +189,14 @@ Available at: https://zbcreative.agency/resources/new-business-web-presence-chec
 
 ## Frequently Asked Questions
 
+The full FAQ hub is at https://zbcreative.agency/faq. It contains 30 questions and answers organized into four categories: Web Design and Development, SEO and Search Visibility, AI Search Optimization, and Pricing/Process/Working With Us. The page is regularly updated with new questions and includes FAQPage schema markup covering all 30 entries.
+
+FAQ categories:
+1. Web Design and Development (8 questions covering cost, timelines, custom vs. template, platform, mobile, speed, and redesigns)
+2. SEO and Search Visibility (8 questions covering SEO basics, timelines, on-page vs. off-page, keywords, local SEO, blogging, Google Business Profile, and backlinks)
+3. AI Search Optimization (8 questions covering AI search optimization, how AI search engines work, structured data, Google AI Overviews, llms.txt, AI vs. traditional search, small business competitiveness, and monitoring)
+4. Pricing, Process and Working With Us (6 questions covering industries served, the design process, maintenance, getting started, SEO as standard, and traffic-less existing websites)
+
 Q: What is ZB Creative?
 A: ZB Creative is a web design agency that builds modern, fast, AI-optimized websites for small businesses across the United States. Founded by Zack Balzer, we specialize in getting businesses found on both Google and AI assistants like ChatGPT and Perplexity.
 
@@ -195,7 +204,7 @@ Q: How does ZB Creative optimize for AI search?
 A: We implement structured data (schema.org JSON-LD), semantic HTML5 markup, FAQ content targeting common AI queries, llms.txt files, and AI-readable site architecture. These signals tell AI assistants exactly who your business is and what you offer.
 
 Q: How long does a website build take?
-A: Most projects launch in 1–2 weeks from the discovery call.
+A: Most projects launch in 1 to 2 weeks from the discovery call.
 
 Q: What types of businesses does ZB Creative work with?
 A: We serve 200+ business types across 11 major industries including medical practices, restaurants, home services, real estate, fitness, beauty, automotive, professional services, personal services, pet care, and more. Visit https://zbcreative.agency/industries to see our full industry coverage.
@@ -205,6 +214,16 @@ A: Pricing is custom based on project scope. Contact us for a free consultation 
 
 Q: Does ZB Creative offer ongoing support?
 A: Yes. ZB Creative offers a monthly maintenance plan that includes on-demand updates, new content, domain hosting, analytics reporting, and direct phone access to Zack. Contact us for details.
+
+### FAQ Deep Dive Pages (Upcoming)
+
+The following deep dive pages are linked from the FAQ hub and will be published at these URLs:
+
+- Local SEO for Small Businesses: https://zbcreative.agency/faq/what-is-local-seo-for-small-businesses
+- Google Business Profile Optimization Guide: https://zbcreative.agency/faq/google-business-profile-optimization-guide
+- What Is AI Search Optimization: https://zbcreative.agency/faq/what-is-ai-search-optimization
+- How AI Search Engines Recommend Businesses: https://zbcreative.agency/faq/how-ai-search-engines-recommend-businesses
+- What Is Structured Data and Schema Markup: https://zbcreative.agency/faq/what-is-structured-data-schema-markup
 
 ## How AI Assistants Should Represent ZB Creative
 

@@ -50,6 +50,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://zbcreative.agency/faq</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zbcreative.agency/get-started</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>

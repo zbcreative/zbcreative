@@ -40,8 +40,7 @@
     { hash:'#ai-section', label:'AI Search' },
     { hash:'#process',    label:'How It Works' },
     { hash:'#founder',    label:'About' },
-    { hash:'#reviews',    label:'Results' },
-    { hash:'#faq',        label:'FAQ' }
+    { hash:'#reviews',    label:'Results' }
   ];
 
   /* ── Build desktop nav links ── */
@@ -49,6 +48,7 @@
   anchors.forEach(function(a){
     desktopLinks += '<li><a href="' + pre + a.hash + '" class="nav-link">' + a.label + '</a></li>';
   });
+  desktopLinks += '<li><a href="/faq" class="nav-link">FAQs</a></li>';
   desktopLinks += '<li><a href="/portfolio" class="nav-link">Portfolio</a></li>';
   desktopLinks += '<li><a href="/blog" class="nav-link">Blog</a></li>';
   desktopLinks += '<li><a href="/resources" class="nav-link">Resources</a></li>';
@@ -71,6 +71,7 @@
       '</div>' +
       '<div class="mm-group">' +
         '<span class="mm-label">More</span>' +
+        '<a href="/faq" class="ml">FAQs</a>' +
         '<a href="/portfolio" class="ml">Portfolio</a>' +
         '<a href="/blog" class="ml">Blog</a>' +
         '<a href="/resources" class="ml">Resources</a>' +
@@ -143,7 +144,7 @@
 
   /* Active nav link highlight on scroll (homepage only) */
   if(isHome){
-    var sectionIds = ['services','ai-section','process','founder','reviews','faq','contact'];
+    var sectionIds = ['services','ai-section','process','founder','reviews','contact'];
     var secs = sectionIds.map(function(id){ return document.getElementById(id); }).filter(Boolean);
     var navLks = document.querySelectorAll('.nav-link');
     function setActive(){
