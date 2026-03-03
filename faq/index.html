@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Microsoft Clarity -->
@@ -125,17 +125,26 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none} button{c
 .faq-hero h1 em{font-style:italic;color:var(--or)}
 .faq-hero p{font-size:clamp(.95rem,1.3vw,1.06rem);color:var(--gm);max-width:54ch;margin:0 auto;line-height:1.78}
 
-/* STICKY CATEGORY NAV */
-.faq-cat-nav{position:sticky;top:72px;z-index:50;background:var(--wh);border-bottom:1.5px solid rgba(26,26,26,.08);box-shadow:0 2px 8px rgba(26,26,26,.05)}
-.faq-cats{display:flex;align-items:center;gap:6px;padding:10px 0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.faq-cats::-webkit-scrollbar{display:none}
-.faq-cat-btn{font-family:var(--fb);font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:8px 18px;border-radius:var(--rp);background:transparent;color:var(--gm);border:1.5px solid rgba(26,26,26,.1);transition:all .2s;cursor:pointer;white-space:nowrap;flex-shrink:0;text-decoration:none;display:inline-flex;align-items:center}
-.faq-cat-btn:hover{border-color:var(--or);color:var(--or)}
-.faq-cat-btn.active{background:var(--or);color:var(--wh);border-color:var(--or)}
+/* CENTERED FILTER BUTTONS */
+.faq-filters{padding:clamp(24px,3vw,40px) 0 clamp(32px,4vw,48px)}
+.faq-filter-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+.faq-filter-btn{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 20px;border-radius:var(--rp);background:var(--wh);color:var(--gm);border:1.5px solid rgba(26,26,26,.1);transition:all .2s;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center}
+.faq-filter-btn:hover{border-color:var(--or);color:var(--or)}
+.faq-filter-btn.active{background:var(--or);color:var(--wh);border-color:var(--or)}
+
+/* FAQ SIDEBAR LAYOUT */
+.faq-layout{display:grid;grid-template-columns:1fr 260px;gap:32px;align-items:start}
+.faq-sidebar{position:sticky;top:100px;background:var(--wh);border-radius:var(--rlg);border:1.5px solid rgba(26,26,26,.07);padding:20px 22px;box-shadow:0 2px 8px rgba(26,26,26,.08)}
+.sidebar-title{font-family:var(--fd);font-size:.82rem;font-weight:700;margin-bottom:14px;color:var(--ch)}
+.sidebar-links{display:flex;flex-direction:column;gap:5px}
+.sidebar-link{font-size:.78rem;color:var(--gm);transition:color .2s;line-height:1.4;padding:3px 0}
+.sidebar-link:hover{color:var(--or)}
+.sidebar-link.active{color:var(--or);font-weight:600}
 
 /* FAQ SECTIONS */
 .faq-section{padding:clamp(48px,6vw,80px) 0}
-.faq-section:nth-child(even){background:var(--cream-dk)}
+.faq-section:nth-child(even){position:relative}
+.faq-section:nth-child(even)::before{content:'';position:absolute;top:0;bottom:0;left:calc(-1 * var(--faq-bg-left,0px));width:100vw;background:var(--cream-dk);z-index:-1}
 .faq-section-hdr{margin-bottom:clamp(24px,3vw,36px)}
 .faq-section-hdr .tag{margin-bottom:14px;display:inline-flex}
 .faq-section-hdr h2{font-family:var(--fd);font-size:clamp(1.5rem,2.5vw,2.1rem);font-weight:900;letter-spacing:-.02em;line-height:1.1}
@@ -191,14 +200,18 @@ footer{background:var(--ch);padding:clamp(48px,7vw,80px) 0 0}
 .fu.on{opacity:1;transform:translateY(0)}
 
 /* RESPONSIVE */
+@media(max-width:960px){
+  .faq-layout{grid-template-columns:1fr}
+  .faq-sidebar{display:none}
+}
 @media(max-width:900px){
   .fgr{grid-template-columns:1fr 1fr}
-  .faq-cat-nav{top:64px}
 }
 @media(max-width:640px){
   .fgr{grid-template-columns:1fr}
   .fbo{flex-direction:column;gap:8px;text-align:center}
-  .faq-cat-nav{top:60px}
+  .faq-filter-row{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+  .faq-filter-btn{flex-shrink:0}
 }
 </style>
 </head>
@@ -233,28 +246,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- STICKY CATEGORY NAV -->
-<div class="faq-cat-nav" id="faq-cat-nav" role="navigation" aria-label="FAQ categories">
+<!-- FILTER BUTTONS -->
+<section class="faq-filters" aria-label="FAQ categories">
   <div class="w">
-    <div class="faq-cats">
-      <a href="#web-design" class="faq-cat-btn active">Web Design &amp; Development</a>
-      <a href="#seo" class="faq-cat-btn">SEO &amp; Search Visibility</a>
-      <a href="#ai-search" class="faq-cat-btn">AI Search Optimization</a>
-      <a href="#working-with-us" class="faq-cat-btn">Working With Us</a>
+    <div class="faq-filter-row">
+      <a href="#web-design" class="faq-filter-btn active">Web Design &amp; Development</a>
+      <a href="#seo" class="faq-filter-btn">SEO &amp; Search Visibility</a>
+      <a href="#ai-search" class="faq-filter-btn">AI Search Optimization</a>
+      <a href="#working-with-us" class="faq-filter-btn">Working With Us</a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- FAQ SECTIONS -->
+<div class="w">
+<div class="faq-layout">
 <div class="faq-sections">
 
 <!-- SECTION 1: WEB DESIGN & DEVELOPMENT -->
 <section class="faq-section" id="web-design" aria-labelledby="faq-s1-hdr">
-  <div class="w">
-    <div class="faq-section-hdr fu">
-      <span class="tag">01</span>
-      <h2 id="faq-s1-hdr">Web Design <em>&amp; Development</em></h2>
-    </div>
+  <div class="faq-section-hdr fu">
+    <span class="tag">01</span>
+    <h2 id="faq-s1-hdr">Web Design <em>&amp; Development</em></h2>
+  </div>
     <div class="flist" role="list">
 
       <div class="fi fu" role="listitem">
@@ -343,16 +357,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
-  </div>
 </section>
 
 <!-- SECTION 2: SEO & SEARCH VISIBILITY -->
 <section class="faq-section" id="seo" aria-labelledby="faq-s2-hdr">
-  <div class="w">
-    <div class="faq-section-hdr fu">
-      <span class="tag bl">02</span>
-      <h2 id="faq-s2-hdr">SEO <em>&amp; Search Visibility</em></h2>
-    </div>
+  <div class="faq-section-hdr fu">
+    <span class="tag bl">02</span>
+    <h2 id="faq-s2-hdr">SEO <em>&amp; Search Visibility</em></h2>
+  </div>
     <div class="flist" role="list">
 
       <div class="fi fu" role="listitem">
@@ -444,16 +456,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
-  </div>
 </section>
 
 <!-- SECTION 3: AI SEARCH OPTIMIZATION -->
 <section class="faq-section" id="ai-search" aria-labelledby="faq-s3-hdr">
-  <div class="w">
-    <div class="faq-section-hdr fu">
-      <span class="tag or">03</span>
-      <h2 id="faq-s3-hdr">AI Search <em>Optimization</em></h2>
-    </div>
+  <div class="faq-section-hdr fu">
+    <span class="tag or">03</span>
+    <h2 id="faq-s3-hdr">AI Search <em>Optimization</em></h2>
+  </div>
     <div class="flist" role="list">
 
       <div class="fi fu" role="listitem">
@@ -543,16 +553,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
-  </div>
 </section>
 
 <!-- SECTION 4: PRICING, PROCESS & WORKING WITH US -->
 <section class="faq-section" id="working-with-us" aria-labelledby="faq-s4-hdr">
-  <div class="w">
-    <div class="faq-section-hdr fu">
-      <span class="tag">04</span>
-      <h2 id="faq-s4-hdr">Pricing, Process <em>&amp; Working With Us</em></h2>
-    </div>
+  <div class="faq-section-hdr fu">
+    <span class="tag">04</span>
+    <h2 id="faq-s4-hdr">Pricing, Process <em>&amp; Working With Us</em></h2>
+  </div>
     <div class="flist" role="list">
 
       <div class="fi fu" role="listitem">
@@ -629,10 +637,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
-  </div>
 </section>
 
 </div><!-- end .faq-sections -->
+
+<aside class="faq-sidebar" aria-label="FAQ categories">
+  <div class="sidebar-title">Browse by Category</div>
+  <div class="sidebar-links">
+    <a href="#web-design" class="sidebar-link active">Web Design &amp; Development</a>
+    <a href="#seo" class="sidebar-link">SEO &amp; Search Visibility</a>
+    <a href="#ai-search" class="sidebar-link">AI Search Optimization</a>
+    <a href="#working-with-us" class="sidebar-link">Working With Us</a>
+  </div>
+</aside>
+
+</div><!-- end .faq-layout -->
+</div><!-- end .w -->
 
 <!-- CTA BAND -->
 <section class="cband" aria-labelledby="cta-hdr">
@@ -751,35 +771,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   });
 
-  // Category nav: smooth scroll accounting for fixed header + sticky cat nav
-  var catNav = document.getElementById('faq-cat-nav');
-  document.querySelectorAll('.faq-cat-btn').forEach(function(link){
+  // Smooth scroll for filter buttons and sidebar links
+  document.querySelectorAll('.faq-filter-btn, .sidebar-link').forEach(function(link){
     link.addEventListener('click', function(e){
       e.preventDefault();
       var target = document.querySelector(link.getAttribute('href'));
       if(!target) return;
-      var hdrH = 72;
-      var catH = catNav ? catNav.offsetHeight : 0;
-      var offset = hdrH + catH + 8;
-      var top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({top:top, behavior:'smooth'});
+      var hdr = document.querySelector('header');
+      var offset = (hdr ? hdr.offsetHeight : 72) + 16;
+      window.scrollTo({top: target.getBoundingClientRect().top + window.scrollY - offset, behavior:'smooth'});
     });
   });
 
-  // Category nav active state on scroll
+  // Active state on scroll — updates both filter buttons and sidebar links
   var sections = document.querySelectorAll('.faq-section');
-  var catBtns = document.querySelectorAll('.faq-cat-btn');
+  var filterBtns = document.querySelectorAll('.faq-filter-btn');
+  var sidebarLinks = document.querySelectorAll('.sidebar-link');
   var sectionObs = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
       if(entry.isIntersecting){
         var id = entry.target.id;
-        catBtns.forEach(function(btn){
+        filterBtns.forEach(function(btn){
           btn.classList.toggle('active', btn.getAttribute('href') === '#' + id);
+        });
+        sidebarLinks.forEach(function(lnk){
+          lnk.classList.toggle('active', lnk.getAttribute('href') === '#' + id);
         });
       }
     });
   },{rootMargin:'-25% 0px -65% 0px', threshold:0});
   sections.forEach(function(s){ sectionObs.observe(s); });
+
+  // Full-width background on alternate sections — tracks section's left offset from viewport
+  function updateFaqBgOffset(){
+    var s = document.querySelector('.faq-section:nth-child(even)');
+    if(s) document.documentElement.style.setProperty('--faq-bg-left', s.getBoundingClientRect().left + 'px');
+  }
+  updateFaqBgOffset();
+  window.addEventListener('resize', updateFaqBgOffset, {passive:true});
+
+  // Align sidebar top with the first FAQ question (past the section header)
+  function alignSidebar(){
+    var sidebar = document.querySelector('.faq-sidebar');
+    var firstSection = document.querySelector('.faq-section');
+    var firstHdr = document.querySelector('.faq-section-hdr');
+    if(!sidebar || !firstSection || !firstHdr) return;
+    var pt = parseFloat(getComputedStyle(firstSection).paddingTop) || 0;
+    var hdrH = firstHdr.offsetHeight;
+    var hdrMb = parseFloat(getComputedStyle(firstHdr).marginBottom) || 0;
+    sidebar.style.marginTop = (pt + hdrH + hdrMb) + 'px';
+  }
+  alignSidebar();
+  window.addEventListener('resize', alignSidebar, {passive:true});
 
   // Back to top
   var btt = document.getElementById('btt');
