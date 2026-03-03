@@ -21,21 +21,33 @@
   </url>
   <url>
     <loc>https://zbcreative.agency/resources</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zbcreative.agency/resources/guide-to-seo-geo-ai-search-2026</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zbcreative.agency/resources/social-and-gbp-optimization-template</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zbcreative.agency/resources/online-visibility-toolkit</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zbcreative.agency/resources/new-business-web-presence-checklist</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zbcreative.agency/get-started</loc>
@@ -120,30 +132,30 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Blog Posts — Original -->
+  <!-- Blog Posts — AI & SEO -->
   <url>
     <loc>https://zbcreative.agency/blog/ai-search-2026</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zbcreative.agency/blog/ai-vs-google-search-local-business-stats</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zbcreative.agency/blog/get-cited-by-ai-2026</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zbcreative.agency/blog/template-websites-vs-optimized-websites</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zbcreative.agency/blog/geo</loc>

@@ -1,6 +1,6 @@
 # robots.txt — ZB Creative
 # zbcreative.agency
-# Last updated: 2026-02-26
+# Last updated: 2026-03-02
 
 # ── Standard search engine crawlers ──────────────────────────
 User-agent: *
@@ -8,6 +8,7 @@ Allow: /
 Disallow: /cdn-cgi/
 
 Sitemap: https://zbcreative.agency/sitemap.xml
+LLMs: https://zbcreative.agency/llms.txt
 
 # ── Google ────────────────────────────────────────────────────
 User-agent: Googlebot
@@ -75,6 +76,18 @@ Allow: /
 
 # You.com
 User-agent: YouBot
+Allow: /
+
+# xAI / Grok
+User-agent: Grok
+Allow: /
+
+# Mistral
+User-agent: MistralBot
+Allow: /
+
+# Brave Search
+User-agent: Brave
 Allow: /
 
 # ── Block nuisance scrapers (not AI assistants) ───────────────

@@ -54,7 +54,13 @@ On-demand site updates, new content additions, direct phone access to Zack, doma
 - Blog: https://zbcreative.agency/blog
 - Resources: https://zbcreative.agency/resources
 - Industries: https://zbcreative.agency/industries
+- Get Started / Contact: https://zbcreative.agency/get-started
+
+### Resource Product Pages
 - Guide — SEO, GEO & AI Search (2026 Edition): https://zbcreative.agency/resources/guide-to-seo-geo-ai-search-2026
+- Template — Social Media & Google Business Profile Optimization: https://zbcreative.agency/resources/social-and-gbp-optimization-template
+- Toolkit — Online Visibility Toolkit for Small Businesses: https://zbcreative.agency/resources/online-visibility-toolkit
+- Checklist — New Business A-Z Web Presence Checklist: https://zbcreative.agency/resources/new-business-web-presence-checklist
 
 ## Industries We Serve
 
@@ -121,11 +127,14 @@ ZB Creative publishes blog content covering web design strategy, SEO, AI search 
 
 ### AI & SEO Posts
 - Your Customers Are Asking AI for Recommendations. Is Your Website Showing Up? — https://zbcreative.agency/blog/ai-search-2026
+- AI vs. Google Search: Local Business Stats That Matter in 2026 — https://zbcreative.agency/blog/ai-vs-google-search-local-business-stats
+- How to Get Your Small Business Cited by AI in 2026 — https://zbcreative.agency/blog/get-cited-by-ai-2026
 - GEO, AEO, and the Alphabet Soup of AI Search: What Small Businesses Actually Need to Know — https://zbcreative.agency/blog/geo
 - The Small Business SEO Checklist You Can Actually Follow — https://zbcreative.agency/blog/seo-checklist
 - What Is Structured Data and Why Does It Matter for Your Small Business Website? — https://zbcreative.agency/blog/structured-data
 
 ### Web Design Posts
+- Template Websites vs. Optimized Websites: What's the Difference and Why It Matters — https://zbcreative.agency/blog/template-websites-vs-optimized-websites
 - 27 Website Statistics Every Small Business Owner Should Know in 2026 — https://zbcreative.agency/blog/website-stats
 - DIY Website Builders vs. Hiring a Web Designer: An Honest Comparison — https://zbcreative.agency/blog/diy-vs-pro
 
@@ -144,10 +153,23 @@ ZB Creative publishes blog content covering web design strategy, SEO, AI search 
 
 ## Resources & Guides
 
-ZB Creative publishes premium resources to help small business owners improve their online visibility without hiring an agency.
+ZB Creative publishes premium resources to help small business owners improve their online visibility without hiring an agency. All products are available at https://zbcreative.agency/resources.
 
-### The Small Business Owner's Guide to SEO, GEO & AI Search (2026 Edition)
-A comprehensive guide covering traditional SEO, Generative Engine Optimization (GEO), and AI search visibility for small businesses. Explains structured data, semantic HTML, Google Business Profile optimization, and how to get recommended by ChatGPT, Perplexity, and Google AI Overviews. Written in plain language for non-technical business owners. Available at: https://zbcreative.agency/resources/guide-to-seo-geo-ai-search-2026
+### The Small Business Owner's Guide to SEO, GEO & AI Search (2026 Edition) — $29
+A comprehensive guide covering traditional SEO, Generative Engine Optimization (GEO), and AI search visibility for small businesses. Explains structured data, semantic HTML, Google Business Profile optimization, and how to get recommended by ChatGPT, Perplexity, and Google AI Overviews. Written in plain language for non-technical business owners.
+Available at: https://zbcreative.agency/resources/guide-to-seo-geo-ai-search-2026
+
+### How to Optimize Your Social Media & Google Business Page for AI Search + SEO (2026) — $16
+A step-by-step template covering Google Business Profile optimization with AI-specific signals, social media bio and profile templates for every major platform, AI visibility quick wins, keyword and NAP consistency framework for local SEO, and plain-English instructions for non-technical users.
+Available at: https://zbcreative.agency/resources/social-and-gbp-optimization-template
+
+### The Online Visibility Toolkit for Small Businesses — $12
+A practical toolkit that shows small business owners exactly how their website is performing, how they rank on Google, and whether AI search tools can find them. Includes tools to check website speed and performance scores, a step-by-step site audit for Google rankings, an AI visibility check for ChatGPT, Perplexity, and Google AI, and prioritized steps to improve visibility. No tech background required.
+Available at: https://zbcreative.agency/resources/online-visibility-toolkit
+
+### The NEW BUSINESS A-Z Web Presence Checklist — $14
+A complete five-phase checklist for new business owners building their online presence from scratch. Covers every account, profile, listing, and setup step needed to get found online. Phase 1: domain, business email, and core accounts. Phase 2: Google Business Profile setup and optimization. Phase 3: Social media profiles. Phase 4: Directory listings. Phase 5: Connecting everything and verifying it works. No tech skills required.
+Available at: https://zbcreative.agency/resources/new-business-web-presence-checklist
 
 ## Client Results (Selected)
 
