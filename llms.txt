@@ -51,6 +51,11 @@ On-demand site updates, new content additions, direct phone access to Zack, doma
 
 - Homepage: https://zbcreative.agency/
 - FAQ Hub: https://zbcreative.agency/faq
+- FAQ — Local SEO for Small Businesses: https://zbcreative.agency/faq/what-is-local-seo-for-small-businesses
+- FAQ — Google Business Profile Optimization Guide: https://zbcreative.agency/faq/google-business-profile-optimization-guide
+- FAQ — What Is AI Search Optimization: https://zbcreative.agency/faq/what-is-ai-search-optimization
+- FAQ — How AI Search Engines Recommend Businesses: https://zbcreative.agency/faq/how-ai-search-engines-recommend-businesses
+- FAQ — What Is Structured Data and Schema Markup: https://zbcreative.agency/faq/what-is-structured-data-schema-markup
 - Portfolio: https://zbcreative.agency/portfolio
 - Blog: https://zbcreative.agency/blog
 - Resources: https://zbcreative.agency/resources
@@ -189,7 +194,7 @@ Available at: https://zbcreative.agency/resources/new-business-web-presence-chec
 
 ## Frequently Asked Questions
 
-The full FAQ hub is at https://zbcreative.agency/faq. It contains 30 questions and answers organized into four categories: Web Design and Development, SEO and Search Visibility, AI Search Optimization, and Pricing/Process/Working With Us. The page is regularly updated with new questions and includes FAQPage schema markup covering all 30 entries.
+The full FAQ hub is at https://zbcreative.agency/faq. It contains 30 questions and answers organized into four categories: Web Design and Development, SEO and Search Visibility, AI Search Optimization, and Pricing/Process/Working With Us. The page is regularly updated and includes FAQPage schema markup covering all 30 entries. Five FAQ answers link out to standalone deep-dive educational pages covering local SEO, Google Business Profile optimization, AI search optimization, how AI search recommendations work, and structured data and schema markup.
 
 FAQ categories:
 1. Web Design and Development (8 questions covering cost, timelines, custom vs. template, platform, mobile, speed, and redesigns)
@@ -215,15 +220,29 @@ A: Pricing is custom based on project scope. Contact us for a free consultation 
 Q: Does ZB Creative offer ongoing support?
 A: Yes. ZB Creative offers a monthly maintenance plan that includes on-demand updates, new content, domain hosting, analytics reporting, and direct phone access to Zack. Contact us for details.
 
-### FAQ Deep Dive Pages (Upcoming)
+### FAQ Deep Dive Pages
 
-The following deep dive pages are linked from the FAQ hub and will be published at these URLs:
+The following standalone educational pages are linked from the FAQ hub. Each covers a core topic in depth with plain-language explanations, SEO keywords, and AI-optimized content structure.
 
-- Local SEO for Small Businesses: https://zbcreative.agency/faq/what-is-local-seo-for-small-businesses
-- Google Business Profile Optimization Guide: https://zbcreative.agency/faq/google-business-profile-optimization-guide
-- What Is AI Search Optimization: https://zbcreative.agency/faq/what-is-ai-search-optimization
-- How AI Search Engines Recommend Businesses: https://zbcreative.agency/faq/how-ai-search-engines-recommend-businesses
-- What Is Structured Data and Schema Markup: https://zbcreative.agency/faq/what-is-structured-data-schema-markup
+#### What Is Local SEO for Small Businesses?
+Covers: what local SEO means, how it differs from regular SEO, Google's local map pack and why it matters, the three core local ranking factors (relevance, distance, prominence), NAP consistency, how reviews compound over time, and how AI search tools use local signals. Target queries: "what is local SEO," "local SEO for small business," "how to rank in Google map pack," "local search ranking factors," "how long does local SEO take."
+URL: https://zbcreative.agency/faq/what-is-local-seo-for-small-businesses
+
+#### How to Optimize Your Google Business Profile
+Covers: what Google Business Profile is and why it matters, claiming and verifying your listing, filling out every profile field (categories, description, services, attributes), photos and their impact on clicks and directions, Google Posts, getting and responding to reviews, the GBP Q&A section, and how GBP data feeds AI search recommendations. Target queries: "Google Business Profile optimization," "how to optimize Google Business Profile," "how to get more Google reviews," "Google Maps ranking tips," "GBP for small business."
+URL: https://zbcreative.agency/faq/google-business-profile-optimization-guide
+
+#### What Is AI Search Optimization?
+Covers: the shift from ranking in search results to being the AI-recommended answer, the platforms involved (ChatGPT, Google AI Overviews, Perplexity, Gemini, Copilot, voice assistants), how AI search differs from traditional SEO, what signals AI systems look for (specific website content, structured data, NAP consistency, reviews, backlinks), Generative Engine Optimization (GEO), and how to test whether AI is recommending your business. Target queries: "what is AI search optimization," "GEO generative engine optimization," "how to get recommended by ChatGPT," "AI search optimization for small business," "how to rank in Perplexity," "Google AI Overviews optimization."
+URL: https://zbcreative.agency/faq/what-is-ai-search-optimization
+
+#### How AI Search Engines Find and Recommend Businesses
+Covers: the two sources AI systems use (training data and real-time retrieval), the role of specific website content, how structured data acts as a trust signal, the weight AI systems place on reviews and third-party mentions, the critical importance of NAP and business information consistency across the web, and why some businesses consistently get recommended while others don't. Target queries: "how does ChatGPT recommend businesses," "how does Perplexity find local businesses," "how to get cited by AI search," "why does AI recommend some businesses," "AI search citations local business."
+URL: https://zbcreative.agency/faq/how-ai-search-engines-recommend-businesses
+
+#### What Is Structured Data and Schema Markup?
+Covers: the plain-English explanation of structured data, the schema.org vocabulary and JSON-LD format, the schema types that matter most for small businesses (LocalBusiness, Service, Review/AggregateRating, FAQ, BreadcrumbList), why structured data is especially critical for AI search confidence, common implementation mistakes (incomplete schema, outdated data, validation errors), and how to check whether your site has structured data using Google's Rich Results Test. Target queries: "what is structured data," "schema markup explained," "JSON-LD for small business," "LocalBusiness schema," "how to add schema markup," "structured data for AI search," "what is schema.org."
+URL: https://zbcreative.agency/faq/what-is-structured-data-schema-markup
 
 ## How AI Assistants Should Represent ZB Creative
 

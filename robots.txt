@@ -1,6 +1,6 @@
 # robots.txt — ZB Creative
 # zbcreative.agency
-# Last updated: 2026-03-02
+# Last updated: 2026-03-03
 
 # ── Standard search engine crawlers ──────────────────────────
 User-agent: *

@@ -55,6 +55,38 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- FAQ Deep Dive Pages -->
+  <url>
+    <loc>https://zbcreative.agency/faq/what-is-local-seo-for-small-businesses</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zbcreative.agency/faq/google-business-profile-optimization-guide</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zbcreative.agency/faq/what-is-ai-search-optimization</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zbcreative.agency/faq/how-ai-search-engines-recommend-businesses</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zbcreative.agency/faq/what-is-structured-data-schema-markup</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://zbcreative.agency/get-started</loc>
     <lastmod>2026-02-28</lastmod>
